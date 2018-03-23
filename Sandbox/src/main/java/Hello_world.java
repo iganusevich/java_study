@@ -4,12 +4,17 @@ public class Hello_world {
 		
 		System.out.println("Hello, world!");
 		hello("user");
-		double l = 5;
-		System.out.println(area(l));
-		double a = 3;
-		double b = 5;
 
-		System.out.println(area(a,b));
+		Square s = new Square(6);
+		System.out.println(s.area());
+
+		Rectangle r = new Rectangle(4,5);
+		System.out.println(r.area());
+
+		Point p1 = new Point(0,0);
+		Point p2 = new Point(3,4);
+		System.out.println(p1.distance(p1,p2));
+
 
 
 
@@ -22,11 +27,7 @@ public class Hello_world {
 		System.out.println("Hello, " + somebody + "!");
 	}
 
-	public static double area(double len) {
-		return len*len;
-	}
 
-	public static double area(double a, double b){
-		return a*b;
-	}
+
+
 }
