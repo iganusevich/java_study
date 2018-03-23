@@ -1,3 +1,5 @@
+package pk.test;
+
 public class Square {
     public double l;
 
