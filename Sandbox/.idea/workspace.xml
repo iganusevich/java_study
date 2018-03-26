@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8be86ec-c306-44a1-a7c9-c12a7662fa9b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_23_6_jre.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_9_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_13_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_exec_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_0_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_api_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_chrome_driver_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_edge_driver_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_firefox_driver_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_ie_driver_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_java_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_opera_driver_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_remote_driver_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_safari_driver_3_11_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_support_3_11_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/GroupCreationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/GroupCreationTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -105,8 +77,8 @@
       <file leaf-file-name="GroupCreationTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/GroupCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="28" column="66" lean-forward="true" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+            <state relative-caret-position="357">
+              <caret line="49" column="76" lean-forward="true" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -1055,14 +1027,11 @@
       <option name="presentableId" value="Default" />
       <updated>1521806499893</updated>
       <workItem from="1521806504896" duration="3031000" />
-      <workItem from="1522074099437" duration="1573000" />
+      <workItem from="1522074099437" duration="2509000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AreaTest - 2018.03.26 at 14h 00m 41s.xml">
-      <configuration name="AreaTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AreaTest - 2018.03.26 at 14h 01m 24s.xml">
       <configuration name="AreaTest" configurationId="TestNG" />
     </history-entry>
@@ -1090,12 +1059,16 @@
     <history-entry file="GroupCreationTests - 2018.03.26 at 17h 54m 18s.xml">
       <configuration name="GroupCreationTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="GroupCreationTests - 2018.03.26 at 18h 09m 50s.xml">
+      <configuration name="GroupCreationTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4604000" />
+    <option name="totallyTimeSpent" value="5540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="384" y="15" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1110,7 +1083,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1224,8 +1197,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/GroupCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="66" lean-forward="true" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        <state relative-caret-position="357">
+          <caret line="49" column="76" lean-forward="true" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
           <folding />
         </state>
       </provider>
