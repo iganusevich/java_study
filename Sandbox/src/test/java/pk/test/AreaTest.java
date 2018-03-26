@@ -1,13 +1,15 @@
 package pk.test;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
 
 public class AreaTest {
     @Test
     public void testArea(){
-        Square s = new Square(5);
-        assert s.area() == 25;
-        
-        
+        pk.test.Square s = new pk.test.Square(5);
+        Assert.assertEquals(s.area(), 25.0);
+
+
     }
 }

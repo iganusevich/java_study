@@ -7,14 +7,14 @@ public class Hello_world {
 		System.out.println("Hello, world!");
 		hello("user");
 
-		Square s = new Square(6);
+		pk.test.Square s = new pk.test.Square(6);
 		System.out.println(s.area());
 
-		Rectangle r = new Rectangle(4,5);
+		pk.test.Rectangle r = new pk.test.Rectangle(4,5);
 		System.out.println(r.area());
 
-		Point p1 = new Point(0,0);
-		Point p2 = new Point(3,4);
+		pk.test.Point p1 = new pk.test.Point(0,0);
+		pk.test.Point p2 = new pk.test.Point(3,4);
 		System.out.println(p1.distance(p1,p2));
 
 
