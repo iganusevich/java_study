@@ -1,5 +1,6 @@
-package addressbook;
+package addressbook.tests;
 
+import addressbook.models.ContactData;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
