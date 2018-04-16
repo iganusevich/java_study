@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532965cc-e3b4-45d5-a0ad-14a1175e5605" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupModificationTests.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Sandbox/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Sandbox/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ApplicationManager.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ApplicationManager.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactCreationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactCreationTests.class" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ApplicationManager.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/NavigationHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/NavigationHelper.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactCreationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactCreationTests.java" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/GroupHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/GroupHelper.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -326,16 +323,15 @@
       <workItem from="1522673839936" duration="597000" />
       <workItem from="1523522641025" duration="2042000" />
       <workItem from="1523612068752" duration="3270000" />
-      <workItem from="1523870689272" duration="1251000" />
+      <workItem from="1523870689272" duration="1851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9872000" />
+    <option name="totallyTimeSpent" value="10472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
