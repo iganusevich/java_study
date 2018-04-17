@@ -88,8 +88,16 @@ public class ContactHelper extends HelperBase {
 
     public void selectDeleteContact() {
        //click(By.xpath("//input[@id=2 and @name='selected[]']"));
-        if (!wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@id=2 and @name='selected[]' and @type='checkbox']")).isSelected()) {
-            wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@id=2 and @name='selected[]' and @type='checkbox']")).click();
+        if (!wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@name='selected[]']")).isSelected()) {
+            wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@name='selected[]']")).click();
         }
+    }
+
+    public void submitContactDeletion() {
+        click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
+    }
+
+    public void confirmContactDeletion() {
+        wd.switchTo().alert().accept();
     }
 }
