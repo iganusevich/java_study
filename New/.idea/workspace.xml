@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532965cc-e3b4-45d5-a0ad-14a1175e5605" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/main/java/different/Equation.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/different/EquationTests.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Sandbox/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Sandbox/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ContactHelper.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ContactHelper.class" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeletionTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeletionTests.class" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactDeletionTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactDeletionTests.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -326,11 +325,12 @@
       <workItem from="1523870689272" duration="1851000" />
       <workItem from="1523957753164" duration="516000" />
       <workItem from="1523960228717" duration="594000" />
+      <workItem from="1523966490729" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11582000" />
+    <option name="totallyTimeSpent" value="12179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -368,6 +368,60 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d1c8b53-6111-49af-934d-6005d296869a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.BONDTBL">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="TICKERSYMBOL = 'AA'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.SECURITYINFOTBL">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="SYMBOLNAME like '___X%' and SECTYPE ='EQI'" />
+            <filter text="SYMBOLNAME like '____X%' and SECTYPE ='EQI'" />
+            <filter text="SYMBOLNAME like '____X%'" />
+            <filter text="SYMBOLNAME = 'AA'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.USERLOGINTBL">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="USERLOGINSTRING = 'DEC'" />
+            <filter text="USERLOGINSTRING = 'NY3'" />
+            <filter text="USERLOGINSTRING = 'SIA'" />
+            <filter text="USERLOGINSTRING= 'SIA'" />
+            <filter text="USERLOGINSTRING= 'jb,m,'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.CLASSTBL">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="advisorId=282254" />
+            <filter text="advisorId=798519 and classId=5" />
+            <filter text="advisorId=798519" />
+            <filter text="advisorId=304494" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d1c8b53-6111-49af-934d-6005d296869a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
