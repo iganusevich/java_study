@@ -25,8 +25,6 @@ public class ContactHelper extends HelperBase {
         type(By.name("company"), contactData.getCompany());
         type(By.name("address"),contactData.getAddress());
         type(By.name("home"), contactData.getHome());
-
-        wd.findElement(By.name("theform")).click();
         wd.findElement(By.name("mobile")).click();
         wd.findElement(By.name("mobile")).clear();
         wd.findElement(By.name("mobile")).sendKeys(contactData.getMobile());
@@ -69,9 +67,6 @@ public class ContactHelper extends HelperBase {
         wd.findElement(By.name("ayear")).click();
         wd.findElement(By.name("ayear")).clear();
         wd.findElement(By.name("ayear")).sendKeys("1967");
-        if (!wd.findElement(By.xpath("//div[@id='content']/form/select[5]//option[2]")).isSelected()) {
-            wd.findElement(By.xpath("//div[@id='content']/form/select[5]//option[2]")).click();
-        }
         wd.findElement(By.name("address2")).click();
         wd.findElement(By.name("address2")).clear();
         wd.findElement(By.name("address2")).sendKeys(contactData.getAddress2());
@@ -81,5 +76,20 @@ public class ContactHelper extends HelperBase {
         wd.findElement(By.name("notes")).click();
         wd.findElement(By.name("notes")).clear();
         wd.findElement(By.name("notes")).sendKeys(contactData.getNotes());
+    }
+
+    public void selectEditContact() {
+        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a[@href='edit.php?id=2']"));
+    }
+
+    public void submitContactModification() {
+        click(By.name("update"));
+    }
+
+    public void selectDeleteContact() {
+       //click(By.xpath("//input[@id=2 and @name='selected[]']"));
+        if (!wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@id=2 and @name='selected[]' and @type='checkbox']")).isSelected()) {
+            wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@id=2 and @name='selected[]' and @type='checkbox']")).click();
+        }
     }
 }
