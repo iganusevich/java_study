@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class HelperBase {
     protected WebDriver wd;
@@ -30,5 +31,15 @@ public class HelperBase {
         } catch (NoAlertPresentException e) {
             return false;
         }
+    }
+
+    protected void select(By locator, String option) {
+            Select dropdown = new Select(wd.findElement(locator));
+            if (option != null){
+                dropdown.selectByVisibleText(option);
+            } else {
+                dropdown.selectByIndex(2);
+            }
+
     }
 }
