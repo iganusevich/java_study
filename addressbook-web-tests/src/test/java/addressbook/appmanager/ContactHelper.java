@@ -2,6 +2,7 @@ package addressbook.appmanager;
 
 import addressbook.models.ContactData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -47,7 +48,8 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectEditContact() {
-        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a[@href='edit.php?id=2']"));
+        //click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a[@href='edit.php?id=2']"));
+        click(By.cssSelector("a[href*='edit.php?id=']"));
     }
 
     public void submitContactModification() {
@@ -68,4 +70,20 @@ public class ContactHelper extends HelperBase {
     public void confirmContactDeletion() {
         wd.switchTo().alert().accept();
     }
+
+
+
+    public void createContact(ContactData contact) {
+
+        fillInContactForm(contact);
+        submitContactCreation();
+
+        
+
+    }
+
+    public boolean isThereAnyContact() {
+        return isElementPresent(By.cssSelector("a[href*='edit.php?id=']"));
+    }
+
 }

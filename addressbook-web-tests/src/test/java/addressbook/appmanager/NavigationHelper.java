@@ -17,7 +17,7 @@ public class NavigationHelper extends HelperBase {
 
     public void goToAddContactPage() {wd.findElement(By.linkText("add new")).click();
     }
-
     public void returnToHome() {wd.findElement(By.linkText("home")).click();
     }
+
 }
