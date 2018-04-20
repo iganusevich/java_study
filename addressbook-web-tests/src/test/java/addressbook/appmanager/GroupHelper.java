@@ -25,7 +25,7 @@ public class GroupHelper extends HelperBase {
         type(By.name("group_footer"), groupData.getFooter());
     }
 
-    public void createNewGroup() {
+    public void goToCreateNewGroup() {
         click(By.xpath("//div[@id='content']/form/input[4]"));
     }
 
@@ -45,5 +45,16 @@ public class GroupHelper extends HelperBase {
 
     public void submitGroupModification() {
         click(By.name("update"));
+    }
+
+    public void createNewGroup(GroupData group) {
+        goToCreateNewGroup();
+        fillInForm(group);
+        submitGroupCreation();
+
+    }
+
+    public boolean isThereAnyGroup() {
+        return isElementPresent(By.name("selected[]"));
     }
 }
