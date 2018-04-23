@@ -17,7 +17,7 @@ public class ContactModificationTests extends TestBase {
 
         }
         app.getNavigationHelper().returnToHome();
-        app.getContactHelper().selectEditContact();
+        app.getContactHelper().selectEditContact(before - 1);
         app.getContactHelper().fillInContactForm(new ContactData("IreneMOD", "MidMOD", "TestMOD", "IganMOD", "TitleMOD", "CompanyMOD", "AddressMOD", "HomeMOD", "MobileMOD", "WorkMOD", "FaxMOD", "E-mailMOD", "E-mail2MOD", "E-mail3MOD", "HomepageMOD","10","May","1800", "10", "May", "1900", "Address 123MOD", "Home 123MOD", "Notes 123MOD"));
         app.getContactHelper().submitContactModification();
         app.getNavigationHelper().returnToHome();

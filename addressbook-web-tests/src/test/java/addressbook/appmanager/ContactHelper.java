@@ -47,20 +47,20 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void selectEditContact() {
+    public void selectEditContact(int index) {
         //click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a[@href='edit.php?id=2']"));
-        click(By.cssSelector("a[href*='edit.php?id=']"));
+        wd.findElements(By.cssSelector("a[href*='edit.php?id=']")).get(index).click();
     }
 
     public void submitContactModification() {
         click(By.name("update"));
     }
 
-    public void selectDeleteContact() {
-       //click(By.xpath("//input[@id=2 and @name='selected[]']"));
-        if (!wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@name='selected[]']")).isSelected()) {
-            wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@name='selected[]']")).click();
-        }
+    public void selectDeleteContact(int index) {
+       wd.findElements(By.name("selected[]")).get(index).click();
+
+            //wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@name='selected[]']")).click();
+
     }
 
     public void submitContactDeletion() {
