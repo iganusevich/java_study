@@ -86,4 +86,11 @@ public class ContactHelper extends HelperBase {
         return isElementPresent(By.cssSelector("a[href*='edit.php?id=']"));
     }
 
+    public int getContactCount() {
+        return wd.findElements(By.name("selected[]")).size();
+    }
+
+    public String getSearchCount() {
+        return wd.findElement(By.id("search_count")).getText();
+    }
 }
