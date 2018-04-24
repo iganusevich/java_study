@@ -1,10 +1,10 @@
 package addressbook.tests;
 
-import addressbook.appmanager.ContactHelper;
 import addressbook.models.ContactData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.HashSet;
 import java.util.List;
 
 public class ContactModificationTests extends TestBase {
@@ -21,11 +21,14 @@ public class ContactModificationTests extends TestBase {
         List<ContactData> before = app.getContactHelper().getContactList();
         app.getNavigationHelper().returnToHome();
         app.getContactHelper().selectEditContact(before.size() - 1);
-        app.getContactHelper().fillInContactForm(new ContactData("IreneMOD", "MidMOD", "TestMOD", "IganMOD", "TitleMOD", "CompanyMOD", "AddressMOD", "HomeMOD", "MobileMOD", "WorkMOD", "FaxMOD", "E-mailMOD", "E-mail2MOD", "E-mail3MOD", "HomepageMOD","10","May","1800", "10", "May", "1900", "Address 123MOD", "Home 123MOD", "Notes 123MOD"));
+        ContactData contact = new ContactData("IreneMOD", "MidMOD", "TestMOD", "IganMOD", "TitleMOD", "CompanyMOD", "AddressMOD", "HomeMOD", "MobileMOD", "WorkMOD", "FaxMOD", "E-mailMOD", "E-mail2MOD", "E-mail3MOD", "HomepageMOD","10","May","1800", "10", "May", "1900", "Address 123MOD", "Home 123MOD", "Notes 123MOD", before.get(before.size() - 1).getId());
+        app.getContactHelper().fillInContactForm(contact);
         app.getContactHelper().submitContactModification();
         app.getNavigationHelper().returnToHome();
         List<ContactData> after = app.getContactHelper().getContactList();
-        Assert.assertEquals(after.size(), before.size());
+        before.remove(before.size() - 1);
+        before.add(contact);
+        Assert.assertEquals(new HashSet<Object>(after), new HashSet<Object>(before));
 
     }
 }

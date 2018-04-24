@@ -1,14 +1,9 @@
 package addressbook.appmanager;
 
 import addressbook.models.ContactData;
-import addressbook.models.GroupData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,10 +98,11 @@ public class ContactHelper extends HelperBase {
         List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> elements = wd.findElements(By.xpath("//table[@id='maintable']/tbody/tr[@name='entry']"));
         for (WebElement element : elements){
-            String lastName = element.findElement(By.xpath("//td[2]")).getText();
-            String firstName =  element.findElement(By.xpath("//td[3]")).getText();
-            String address =  element.findElement(By.xpath("//td[4]")).getText();
-            ContactData contact = new ContactData(firstName, null,lastName,null,null,null,address,null,null,null,null,             null,null,null,null,null,null,null,null,null,null,null,null,null);
+            String lastName = element.findElement(By.xpath("td[2]")).getText();
+            String firstName =  element.findElement(By.xpath("td[3]")).getText();
+            String address =  element.findElement(By.xpath("td[4]")).getText();
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            ContactData contact = new ContactData(firstName, null,lastName,null,null,null,address,null,null,null,null,             null,null,null,null,null,null,null,null,null,null,null,null,null, id);
             contacts.add(contact);
         }
         return contacts;
