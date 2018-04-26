@@ -3,25 +3,14 @@ package addressbook.models;
 import java.util.Objects;
 
 public class GroupData {
-    private final String name;
-    private final String header;
-    private final String footer;
+    private String name;
+    private String header;
+
+
+
+    private String footer;
     private int id;
 
-    public GroupData(String name, String header, String footer, int id) {
-        this.name = name;
-        this.header = header;
-
-        this.footer = footer;
-        this.id = id;
-    }
-    public GroupData(String name, String header, String footer) {
-        this.name = name;
-        this.header = header;
-
-        this.footer = footer;
-        this.id = 0;
-    }
 
     public String getName() {
         return name;
@@ -35,12 +24,28 @@ public class GroupData {
         return footer;
     }
 
-    public void setId(int id) {
+    public GroupData withId(int id) {
         this.id = id;
+        return this;
     }
 
     public int getId() {
         return id;
+    }
+
+    public GroupData withName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public GroupData withHeader(String header) {
+        this.header = header;
+        return this;
+    }
+
+    public GroupData withFooter(String footer) {
+        this.footer = footer;
+        return this;
     }
 
     @Override
