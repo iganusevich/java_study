@@ -19,7 +19,7 @@ public class ContactHelper extends HelperBase {
         wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    public void fillInContactForm(ContactData contactData) {
+    public void fillInForm(ContactData contactData) {
         type(By.name("firstname"),contactData.getFirstName());
         type(By.name("middlename"), contactData.getMiddleName());
         type(By.name("lastname"), contactData.getLastName());
@@ -47,39 +47,56 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void selectEditContact(int index) {
+    public void selectEdit(int index) {
         //click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a[@href='edit.php?id=2']"));
         wd.findElements(By.cssSelector("a[href*='edit.php?id=']")).get(index).click();
     }
 
-    public void submitContactModification() {
+    public void submitModification() {
         click(By.name("update"));
     }
 
-    public void selectDeleteContact(int index) {
+    public void selectDelete(int index) {
        wd.findElements(By.name("selected[]")).get(index).click();
 
             //wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[1]/input[@name='selected[]']")).click();
 
     }
 
-    public void submitContactDeletion() {
+    public void submitDeletion() {
         click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     }
 
-    public void confirmContactDeletion() {
+    public void confirmDeletion() {
         wd.switchTo().alert().accept();
     }
 
 
 
-    public void createContact(ContactData contact) {
+    public void create(ContactData contact) {
 
-        fillInContactForm(contact);
+        fillInForm(contact);
         submitContactCreation();
+        contactsPage();
 
         
 
+    }
+    public void modify(int index, ContactData contact) {
+        selectEdit(index);
+        fillInForm(contact);
+        submitModification();
+        contactsPage();
+    }
+
+    public void delete(int index) {
+        selectDelete(index);
+        submitDeletion();
+        confirmDeletion();
+        contactsPage();
+    }
+
+    public void contactsPage() {wd.findElement(By.linkText("home")).click();
     }
 
     public boolean isThereAnyContact() {
@@ -94,7 +111,7 @@ public class ContactHelper extends HelperBase {
         return wd.findElement(By.id("search_count")).getText();
     }
 
-    public List<ContactData> getContactList() {
+    public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<ContactData>();
         List<WebElement> elements = wd.findElements(By.xpath("//table[@id='maintable']/tbody/tr[@name='entry']"));
         for (WebElement element : elements){

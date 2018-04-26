@@ -3,31 +3,37 @@ package addressbook.tests;
 
 import addressbook.models.GroupData;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 
 public class GroupDeletionTests extends TestBase {
+    @BeforeMethod
+    public void ensuarePreConditions(){
+        app.goTo().groups();
+        if (app.groups().list().size() == 0){
+            app.groups().create(new GroupData("test2", "logo2", "footer2"));
+        }
+    }
 
 
     @Test
     public void testGroupDeletion() {
-        app.getNavigationHelper().goToGroupPage();
-        if (!app.getGroupHelper().isThereAnyGroup()) {
-            app.getGroupHelper().createNewGroup(new GroupData("test2", "logo2", "footer2"));
-        }
-        List<GroupData> before = app.getGroupHelper().getGroupList();
-        app.getNavigationHelper().goToGroupPage();
-        app.getGroupHelper().selectGroup(before.size() - 1);
-        app.getGroupHelper().deleteSelectedGroup();
-        app.getGroupHelper().returnToGroupPage();
-        List<GroupData> after = app.getGroupHelper().getGroupList();
+        List<GroupData> before = app.groups().list();
+        app.goTo().groups();
+        int index =  before.size() - 1;
+        app.groups().delete(index);
+
+        List<GroupData> after = app.groups().list();
         Assert.assertEquals(after.size(), before.size() - 1);
-        before.remove(before.size() - 1);
+        before.remove(index);
         Assert.assertEquals(after, before);
 
     }
+
+
 
 
 }

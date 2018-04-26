@@ -1,12 +1,10 @@
 package addressbook.tests;
 
 import addressbook.models.ContactData;
-import addressbook.models.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class ContactCreationTests extends TestBase {
@@ -14,14 +12,15 @@ public class ContactCreationTests extends TestBase {
 
     @Test
     public void testContactCreation() {
-        List<ContactData> before = app.getContactHelper().getContactList();
-        app.getNavigationHelper().goToAddContactPage();
+        List<ContactData> before = app.contacts().list();
+        app.goTo().addContact();
         ContactData contact = new ContactData("IreneBD", "Mid", "Test", "Igan", "Title", "Company", "Address", "Home", "Mobile", "Work", "Fax", "E-mail", "E-mail2", "E-mail3", "Homepage","3","February","1991", "5", "March", "2001", "Address 123", "Home 123", "Notes 123");
-        app.getContactHelper().createContact(contact);
-        app.getNavigationHelper().returnToHome();
-        List<ContactData> after = app.getContactHelper().getContactList();
+        app.contacts().create(contact);
+        app.goTo().home();
+        
+        List<ContactData> after = app.contacts().list();
         Assert.assertEquals(after.size(), before.size() + 1);
-        String searchCount = app.getContactHelper().getSearchCount();
+        String searchCount = app.contacts().getSearchCount();
         Assert.assertEquals(Integer.toString(after.size()), searchCount);
 
 

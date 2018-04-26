@@ -32,11 +32,11 @@ public class GroupHelper extends HelperBase {
         click(By.xpath("//div[@id='content']/form/input[4]"));
     }
 
-    public void deleteSelectedGroup() {
+    public void deleteSelected() {
         click(By.xpath("//div[@id='content']/form/input[5]"));
     }
 
-    public void selectGroup(int index) {
+    public void select(int index) {
         wd.findElements(By.name("selected[]")).get(index).click();
         
     }
@@ -49,11 +49,26 @@ public class GroupHelper extends HelperBase {
         click(By.name("update"));
     }
 
-    public void createNewGroup(GroupData group) {
+    public void create(GroupData group) {
         goToCreateNewGroup();
         fillInForm(group);
         submitGroupCreation();
+        returnToGroupPage();
 
+    }
+
+    public void modify(int index, GroupData group) {
+        select(index);
+        initGroupModification();
+        fillInForm(group);
+        submitGroupModification();
+        returnToGroupPage();
+    }
+
+    public void delete(int index) {
+        select(index);
+        deleteSelected();
+        returnToGroupPage();
     }
 
     public boolean isThereAnyGroup() {
@@ -64,7 +79,7 @@ public class GroupHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public List<GroupData> getGroupList() {
+    public List<GroupData> list() {
         List<GroupData> groups = new ArrayList<GroupData>();
         List<WebElement> elements = wd.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements){
