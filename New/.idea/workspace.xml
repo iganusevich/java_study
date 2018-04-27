@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532965cc-e3b4-45d5-a0ad-14a1175e5605" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__org_hamcrest_java_hamcrest_2_0_0_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__org_testng_testng_6_14_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/models/Groups.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__org_testng_testng_6_14_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ContactHelper.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ContactHelper.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/GroupHelper.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/GroupHelper.class" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactCreationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactCreationTests.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeletionTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeletionTests.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactModificationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactModificationTests.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupCreationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupCreationTests.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupDeletionTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupDeletionTests.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupModificationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupModificationTests.class" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/GroupHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/GroupHelper.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactCreationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactCreationTests.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactDeletionTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactDeletionTests.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactModificationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactModificationTests.java" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupCreationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupCreationTests.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupDeletionTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupDeletionTests.java" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupModificationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupModificationTests.java" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/TestBase.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/TestBase.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -118,17 +120,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SECURITYINFOTBL" pinned="false" current-in-tab="false">
-        <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.SECURITYINFOTBL">
+      <file leaf-file-name="TRANSHISTORYTBL" pinned="false" current-in-tab="true">
+        <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.TRANSHISTORYTBL">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <filtering enabled="true">
-                <filter text="CUSIPID = '648815108'" />
-                <filter text="SYMBOLNAME like '___X%' and SECTYPE ='EQI'" />
-                <filter text="SYMBOLNAME like '____X%' and SECTYPE ='EQI'" />
-                <filter text="SYMBOLNAME like '____X%'" />
-                <filter text="SYMBOLNAME = 'AA'" />
-              </filtering>
+              <filtering enabled="true" />
+              <column-attributes>
+                <column name="RID(t)" enabled="false" />
+              </column-attributes>
             </state>
           </provider>
         </entry>
@@ -146,7 +145,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="USERLOGINTBL" pinned="false" current-in-tab="true">
+      <file leaf-file-name="USERLOGINTBL" pinned="false" current-in-tab="false">
         <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.USERLOGINTBL">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -372,15 +371,16 @@
       <workItem from="1523966490729" duration="1333000" />
       <workItem from="1523974891973" duration="1038000" />
       <workItem from="1524042570118" duration="3704000" />
-      <workItem from="1524128413149" duration="3047000" />
+      <workItem from="1524128413149" duration="3345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20704000" />
+    <option name="totallyTimeSpent" value="21002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -416,14 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8d1c8b53-6111-49af-934d-6005d296869a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.SECURITYINFOTBL">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -866,28 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.BONDTBL">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="TICKERSYMBOL = 'AA'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.SECURITYINFOTBL">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="CUSIPID = '648815108'" />
-            <filter text="SYMBOLNAME like '___X%' and SECTYPE ='EQI'" />
-            <filter text="SYMBOLNAME like '____X%' and SECTYPE ='EQI'" />
-            <filter text="SYMBOLNAME like '____X%'" />
-            <filter text="SYMBOLNAME = 'AA'" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.CLASSTBL">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -942,6 +912,41 @@
             <filter text="USERLOGINSTRING= 'SIA'" />
             <filter text="USERLOGINSTRING= 'jb,m,'" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.SECURITYINFOTBL">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="CUSIPID = '648815108'" />
+            <filter text="SYMBOLNAME like '___X%' and SECTYPE ='EQI'" />
+            <filter text="SYMBOLNAME like '____X%' and SECTYPE ='EQI'" />
+            <filter text="SYMBOLNAME like '____X%'" />
+            <filter text="SYMBOLNAME = 'AA'" />
+          </filtering>
+          <column-attributes>
+            <column name="RID(t)" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.BONDTBL">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="TICKERSYMBOL = 'AA'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/193f295b/8d1c8b53-6111-49af-934d-6005d296869a/DB2INST1.TRANSHISTORYTBL">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="RID(t)" enabled="false" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
