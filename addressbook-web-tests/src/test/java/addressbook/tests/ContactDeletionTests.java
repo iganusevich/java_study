@@ -10,6 +10,9 @@ import org.testng.annotations.Test;
 
 import java.util.Set;
 
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.*;
+
 public class ContactDeletionTests extends TestBase{
     @BeforeMethod
     public void ensurePreConditions(){
@@ -27,10 +30,12 @@ public class ContactDeletionTests extends TestBase{
         Contacts before = app.contacts().all();
         ContactData deletedContact = before.iterator().next();
         app.contacts().delete(deletedContact);
-        Contacts after = app.contacts().all();
-        MatcherAssert.assertThat(after, CoreMatchers.equalTo(before.without(deletedContact)));
+        Assert.assertEquals(app.contacts().getContactCount(), before.size()-1);
         String searchCount = app.contacts().getSearchCount();
-        Assert.assertEquals(Integer.toString(after.size()), searchCount);
+        Assert.assertEquals(Integer.toString(app.contacts().getContactCount()), searchCount);
+        Contacts after = app.contacts().all();
+        assertThat(after, equalTo(before.without(deletedContact)));
+
 
     }
 

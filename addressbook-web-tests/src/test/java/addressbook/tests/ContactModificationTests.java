@@ -27,6 +27,7 @@ public class ContactModificationTests extends TestBase {
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withFirstName("IreneMOD").withLastName("TestMOD").withAddress("AddressMOD").withId(modifiedContact.getId());
         app.contacts().modify(contact);
+        Assert.assertEquals(app.contacts().getContactCount(), before.size());
         Contacts after = app.contacts().all();
         MatcherAssert.assertThat(after, CoreMatchers.equalTo(before.withModified(modifiedContact, contact)));
     }
