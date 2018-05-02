@@ -1,6 +1,9 @@
 package addressbook.tests;
 
 import addressbook.models.ContactData;
+import addressbook.models.Contacts;
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,16 +23,12 @@ public class ContactModificationTests extends TestBase {
 
     @Test
     public void testContactModification() {
-        Set<ContactData> before = app.contacts().all();
+        Contacts before = app.contacts().all();
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withFirstName("IreneMOD").withLastName("TestMOD").withAddress("AddressMOD").withId(modifiedContact.getId());
         app.contacts().modify(contact);
-
-        Set<ContactData> after = app.contacts().all();
-        before.remove(modifiedContact);
-        before.add(contact);
-        Assert.assertEquals(after, before);
-
+        Contacts after = app.contacts().all();
+        MatcherAssert.assertThat(after, CoreMatchers.equalTo(before.withModified(modifiedContact, contact)));
     }
 
 

@@ -2,11 +2,41 @@ package addressbook.models;
 
 import com.google.common.collect.ForwardingSet;
 
+import java.util.HashSet;
 import java.util.Set;
 
-public class Groups extends ForwardingSet {
+public class Groups extends ForwardingSet<GroupData> {
+    private Set<GroupData> delegate;
+    
+    public Groups(Groups groups){
+        this.delegate = new HashSet<GroupData>(groups.delegate);
+        
+    }
+
+    public Groups() {
+        this.delegate = new HashSet<GroupData>();
+    }
+
     @Override
     protected Set delegate() {
-        return null;
+        return delegate;
+    }
+
+    public Groups withAdded(GroupData group) {
+        Groups groups = new Groups(this);
+        groups.add(group);
+        return groups;
+        
+    }
+
+    public Groups without(GroupData group) {
+        Groups groups = new Groups(this);
+        groups.remove(group);
+        return groups;
+    }
+
+    public Groups withModified(GroupData modifiedGroup, GroupData group) {
+        Groups groups = new Groups(this);
+        return groups.without(modifiedGroup).withAdded(group);
     }
 }
