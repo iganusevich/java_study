@@ -28,8 +28,13 @@ public class ContactData {
     private String phone2;
     private String notes;
     private  int id;
+    private String allPhones;
+    private  String allEmails;
 
-   
+    public String getAllEmails() {
+        return allEmails;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -254,6 +259,20 @@ public class ContactData {
         return this;
     }
 
+    public String getAllPhones() {
+        return allPhones;
+    }
+
+    public ContactData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+
+    public ContactData withAllEmails(String allEmails) {
+        this.allEmails = allEmails;
+        return this;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -280,4 +299,6 @@ public class ContactData {
                 ", id='" + id + '\'' +
                 '}';
     }
+
+
 }

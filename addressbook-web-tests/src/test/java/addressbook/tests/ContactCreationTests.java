@@ -19,6 +19,7 @@ public class ContactCreationTests extends TestBase {
 
     @Test
     public void testContactCreation() {
+        app.goTo().home();
         Contacts before = app.contacts().all();
         app.goTo().addContact();
         ContactData contact = new ContactData().withFirstName("IreneBD").withLastName("Test").withAddress("Address");
@@ -35,6 +36,7 @@ public class ContactCreationTests extends TestBase {
 
     @Test
     public void testBadContactCreation() {
+        app.goTo().home();
         Contacts before = app.contacts().all();
         app.goTo().addContact();
         ContactData contact = new ContactData().withFirstName("Irene'").withLastName("Test'").withAddress("Address'");
