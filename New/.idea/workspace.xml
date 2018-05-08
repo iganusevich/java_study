@@ -3,13 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="532965cc-e3b4-45d5-a0ad-14a1175e5605" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/misc.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ContactHelper.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/appmanager/ContactHelper.class" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/models/ContactData.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/models/ContactData.class" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/models/GroupData.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/models/GroupData.class" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactCreationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactCreationTests.class" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ContactHelper.java" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupCreationTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/GroupCreationTests.class" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/appmanager/ApplicationManager.java" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/models/ContactData.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/models/ContactData.java" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/models/GroupData.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/models/GroupData.java" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactCreationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactCreationTests.java" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupCreationTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/GroupCreationTests.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -360,11 +369,12 @@
       <workItem from="1524128413149" duration="3931000" />
       <workItem from="1525355312289" duration="598000" />
       <workItem from="1525425301663" duration="609000" />
+      <workItem from="1525686879867" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22795000" />
+    <option name="totallyTimeSpent" value="23394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

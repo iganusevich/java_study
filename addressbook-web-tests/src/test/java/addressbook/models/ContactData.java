@@ -1,19 +1,28 @@
 package addressbook.models;
 
+import com.google.gson.annotations.Expose;
+
 import java.util.Objects;
 
 public class ContactData {
+    @Expose
     private String firstName;
     private String middleName;
+    @Expose
     private String lastName;
     private String nickName;
     private String title;
+    @Expose
     private String company;
+    @Expose
     private String address;
+    @Expose
     private String home;
+    @Expose
     private String mobile;
     private String work;
     private String fax;
+    @Expose
     private String email;
     private String email2;
     private String email3;
