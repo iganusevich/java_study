@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="addressbook.tests.ContactCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-08T12:36:52" hostname="UROBOROS" time="23.12">
+  <properties/>
+  <testcase name="testContactCreation[0](ContactData{firstName='test 0', lastName='LastName 0', address='Address 0', id='0'})" classname="addressbook.tests.ContactCreationTests" time="7.532"/>
+  <testcase name="testContactCreation[1](ContactData{firstName='test 1', lastName='LastName 1', address='Address 1', id='0'})" classname="addressbook.tests.ContactCreationTests" time="7.31"/>
+  <testcase name="testContactCreation[2](ContactData{firstName='test 2', lastName='LastName 2', address='Address 2', id='0'})" classname="addressbook.tests.ContactCreationTests" time="8.277"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

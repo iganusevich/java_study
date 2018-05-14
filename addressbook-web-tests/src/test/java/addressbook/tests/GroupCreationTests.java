@@ -5,6 +5,8 @@ import addressbook.models.Groups;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -50,6 +52,7 @@ public class GroupCreationTests extends TestBase {
 
     @Test (dataProvider = "validGroupsFromJSON")
     public void testGroupCreationTests(GroupData group) {
+        //GroupData group = new GroupData().withName(name).withHeader(header).withFooter(footer);
         app.goTo().groups();
         Groups before = app.groups().all();
         app.groups().create(group);

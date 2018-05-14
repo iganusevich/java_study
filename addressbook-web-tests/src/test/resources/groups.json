@@ -1,29 +1,17 @@
 [
   {
-    "firstName": "test 0",
-    "lastName": "LastName 0",
-    "company": "Company 0",
-    "address": "Address 0",
-    "home": "123234 0",
-    "mobile": "56756456334 0",
-    "email": "test0@email.com"
+    "name": "test 0",
+    "header": "header 0",
+    "footer": "footer 0"
   },
   {
-    "firstName": "test 1",
-    "lastName": "LastName 1",
-    "company": "Company 1",
-    "address": "Address 1",
-    "home": "123234 1",
-    "mobile": "56756456334 1",
-    "email": "test1@email.com"
+    "name": "test 1",
+    "header": "header 1",
+    "footer": "footer 1"
   },
   {
-    "firstName": "test 2",
-    "lastName": "LastName 2",
-    "company": "Company 2",
-    "address": "Address 2",
-    "home": "123234 2",
-    "mobile": "56756456334 2",
-    "email": "test2@email.com"
+    "name": "test 2",
+    "header": "header 2",
+    "footer": "footer 2"
   }
 ]

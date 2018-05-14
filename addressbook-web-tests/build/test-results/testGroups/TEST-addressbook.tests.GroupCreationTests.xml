@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="addressbook.tests.GroupCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-14T11:47:40" hostname="UROBOROS" time="8.252">
+  <properties/>
+  <testcase name="testGroupCreationTests[0](GroupData{name='test 0', id='0'})" classname="addressbook.tests.GroupCreationTests" time="2.808"/>
+  <testcase name="testGroupCreationTests[1](GroupData{name='test 1', id='0'})" classname="addressbook.tests.GroupCreationTests" time="2.714"/>
+  <testcase name="testGroupCreationTests[2](GroupData{name='test 2', id='0'})" classname="addressbook.tests.GroupCreationTests" time="2.729"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

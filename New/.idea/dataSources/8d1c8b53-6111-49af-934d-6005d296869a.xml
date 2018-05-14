@@ -323,8 +323,8 @@ LONGSHORTIND</ColNames>
     <index id="197" parent="17" name="AK3ACCOUNTTBL">
       <ColNames>SISACCOUNTID
 PROCESSDATE</ColNames>
-      <ReverseColNames>SISACCOUNTID
-PROCESSDATE</ReverseColNames>
+      <ReverseColNames>PROCESSDATE
+SISACCOUNTID</ReverseColNames>
       <Unique>1</Unique>
     </index>
     <index id="198" parent="17" name="AK2ACCOUNTTBL">
@@ -1853,7 +1853,7 @@ ADVISORID</ColNames>
     </column>
     <column id="495" parent="32" name="LOGID">
       <Position>4</Position>
-      <DataType>CHAR () FOR BIT DATA(13)|-2</DataType>
+      <DataType>CHAR() FOR BIT DATA(13)|-2</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="496" parent="32" name="TEAMID">
@@ -7022,7 +7022,7 @@ SECTNO</ColNames>
     </foreign-key>
     <column id="1656" parent="84" name="LOGID">
       <Position>1</Position>
-      <DataType>CHAR () FOR BIT DATA(13)|-2</DataType>
+      <DataType>CHAR() FOR BIT DATA(13)|-2</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="1657" parent="84" name="TEAMID">
@@ -8284,7 +8284,7 @@ COORDID</ColNames>
     </column>
     <column id="1940" parent="100" name="EVENT_CORRELATION_ID">
       <Position>4</Position>
-      <DataType>VARCHAR () FOR BIT DATA(32)|-3</DataType>
+      <DataType>VARCHAR() FOR BIT DATA(32)|-3</DataType>
     </column>
     <column id="1941" parent="100" name="EVENT_DATA">
       <Position>5</Position>
@@ -12193,7 +12193,7 @@ COORDID</ColNames>
     </column>
     <column id="2847" parent="147" name="UNIQUEID">
       <Position>26</Position>
-      <DataType>CHAR () FOR BIT DATA(13)|-2</DataType>
+      <DataType>CHAR() FOR BIT DATA(13)|-2</DataType>
     </column>
     <column id="2848" parent="147" name="SISACCOUNTID">
       <Position>27</Position>
@@ -12212,17 +12212,17 @@ COORDID</ColNames>
       <ColNames>SISACCOUNTID
 LONGSHORTIND
 PROCESSDATE</ColNames>
-      <ReverseColNames>SISACCOUNTID
-LONGSHORTIND
-PROCESSDATE</ReverseColNames>
+      <ReverseColNames>LONGSHORTIND
+PROCESSDATE
+SISACCOUNTID</ReverseColNames>
       <Unique>1</Unique>
     </index>
     <index id="2852" parent="147" name="AK5TRANSHISTORYTBL">
       <ColNames>SISACCOUNTID
 LONGSHORTIND
 TRANSTYPE</ColNames>
-      <ReverseColNames>SISACCOUNTID
-LONGSHORTIND
+      <ReverseColNames>LONGSHORTIND
+SISACCOUNTID
 TRANSTYPE</ReverseColNames>
       <Unique>1</Unique>
     </index>

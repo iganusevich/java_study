@@ -36,7 +36,7 @@ public class ContactData {
     private String address2;
     private String phone2;
     private String notes;
-    private  int id;
+    private  int id = 0;
     private String allPhones;
     private  String allEmails;
 
