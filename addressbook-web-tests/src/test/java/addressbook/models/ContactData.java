@@ -1,43 +1,82 @@
 package addressbook.models;
 
 import com.google.gson.annotations.Expose;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+
+import org.hibernate.annotations.Table;
+import org.hibernate.annotations.Type;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.util.Objects;
+
+@Entity
+@javax.persistence.Table(name = "addressbook")
 public class ContactData {
     @Expose
+    @Column(name = "firstName")
     private String firstName;
     private String middleName;
     @Expose
+    @Column(name = "lastName")
     private String lastName;
     private String nickName;
     private String title;
     @Expose
+    @Type(type = "text")
     private String company;
     @Expose
+    @Type(type = "text")
     private String address;
     @Expose
+    @Type(type = "text")
+    @Column(name = "home")
     private String home;
     @Expose
+    @Column(name = "mobile")
+    @Type(type = "text")
     private String mobile;
+
+    @Column(name = "work")
+    @Type(type = "text")
     private String work;
+    @Type(type = "text")
     private String fax;
     @Expose
+    @Type(type = "text")
     private String email;
+    @Type(type = "text")
     private String email2;
+    @Type(type = "text")
     private String email3;
+    @Type(type = "text")
     private String homepage;
-    private String bday;
-    private String bmonth;
-    private String byear;
-    private String aday;
-    private String amonth;
-    private String ayear;
+    //private String bday;
+    //private String bmonth;
+    //private String byear;
+
+    //@Type(type = "text")
+    //private String aday;
+    //private String amonth;
+    //private String ayear;
+    @Type(type = "text")
     private String address2;
+    @Type(type = "text")
     private String phone2;
+    @Type(type = "text")
     private String notes;
+    @Id
+    @Column(name = "id")
     private  int id = 0;
+
+    @Transient
     private String allPhones;
+    @Transient
     private  String allEmails;
 
     public String getAllEmails() {
@@ -116,29 +155,29 @@ public class ContactData {
         return notes;
     }
 
-    public String getBday() {
-        return bday;
-    }
+    //public String getBday() {
+    //    return bday;
+    //}
 
-    public String getBmonth() {
-        return bmonth;
-    }
+    //public String getBmonth() {
+    //    return bmonth;
+    //}
 
-    public String getByear() {
-        return byear;
-    }
+   // public String getByear() {
+     //   return byear;
+   // }
 
-    public String getAday() {
-        return aday;
-    }
+    //public String getAday() {
+    //    return aday;
+    //}
 
-    public String getAmonth() {
-        return amonth;
-    }
+    //public String getAmonth() {
+    //    return amonth;
+    //}
 
-    public String getAyear() {
-        return ayear;
-    }
+    //public String getAyear() {
+    //    return ayear;
+   // }
     public int getId() {
         return id;
     }
@@ -223,35 +262,35 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withBday(String bday) {
-        this.bday = bday;
-        return this;
-    }
+   // public ContactData withBday(String bday) {
+   //     this.bday = bday;
+   //     return this;
+    //}
 
-    public ContactData withBmonth(String bmonth) {
-        this.bmonth = bmonth;
-        return this;
-    }
+  //  public ContactData withBmonth(String bmonth) {
+   //     this.bmonth = bmonth;
+   //     return this;
+  //  }
 
-    public ContactData withByear(String byear) {
-        this.byear = byear;
-        return this;
-    }
+   // public ContactData withByear(String byear) {
+   //     this.byear = byear;
+   //     return this;
+   // }
 
-    public ContactData withAday(String aday) {
-        this.aday = aday;
-        return this;
-    }
+    //public ContactData withAday(String aday) {
+    //    this.aday = aday;
+    //    return this;
+   // }
 
-    public ContactData withAmonth(String amonth) {
-        this.amonth = amonth;
-        return this;
-    }
+  //  public ContactData withAmonth(String amonth) {
+  //      this.amonth = amonth;
+   //     return this;
+   // }
 
-    public ContactData withAyear(String ayear) {
-        this.ayear = ayear;
-        return this;
-    }
+   // public ContactData withAyear(String ayear) {
+    //    this.ayear = ayear;
+    //    return this;
+   // }
 
     public ContactData withAddress2(String address2) {
         this.address2 = address2;
