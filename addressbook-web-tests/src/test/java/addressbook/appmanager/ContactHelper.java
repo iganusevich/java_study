@@ -25,13 +25,15 @@ public class ContactHelper extends HelperBase {
         type(By.name("lastname"), contactData.getLastName());
         //type(By.name("nickname"), contactData.getNickName());
         //type(By.name("title"), contactData.getTitle());
-        type(By.name("company"), contactData.getCompany());
+        if (contactData.getCompany() != null) {type(By.name("company"), contactData.getCompany());}
+
         type(By.name("address"),contactData.getAddress());
-        type(By.name("home"), contactData.getHome());
-        type(By.name("mobile"),contactData.getMobile());
+        if (contactData.getHome() != null) {type(By.name("home"), contactData.getHome());}
+        if (contactData.getMobile() != null) {type(By.name("mobile"),contactData.getMobile());}
+
         //type(By.name("work"), contactData.getWork());
         //type(By.name("fax"),contactData.getFax() );
-        type(By.name("email"), contactData.getEmail());
+        if (contactData.getEmail() != null) {type(By.name("email"), contactData.getEmail());}
         //type(By.name("email2"), contactData.getEmail2());
         //type(By.name("email3"), contactData.getEmail3());
         //type(By.name("homepage"), contactData.getHomepage());

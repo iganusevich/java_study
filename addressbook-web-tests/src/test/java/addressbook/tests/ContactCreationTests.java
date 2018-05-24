@@ -45,13 +45,13 @@ public class ContactCreationTests extends TestBase {
     @Test (dataProvider = "validContactsFromJSON")
     public void testContactCreation(ContactData contact) {
         app.goTo().home();
-        Contacts before = app.contacts().all();
+        Contacts before = app.db().contacts();
         app.goTo().addContact();
         //ContactData contact = new ContactData().withFirstName("IreneBD").withLastName("Test").withAddress("Address");
         app.contacts().create(contact);
         app.goTo().home();
         Assert.assertEquals(app.contacts().getContactCount(), before.size() + 1);
-        Contacts after = app.contacts().all();
+        Contacts after = app.db().contacts();
         String searchCount = app.contacts().getSearchCount();
         Assert.assertEquals(Integer.toString(after.size()), searchCount);
         contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());

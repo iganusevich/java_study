@@ -28,7 +28,7 @@ public class ContactData {
     private String nickName;
     private String title;
     @Expose
-    @Type(type = "text")
+    //@Type(type = "text")
     private String company;
     @Expose
     @Type(type = "text")
@@ -42,8 +42,30 @@ public class ContactData {
     @Type(type = "text")
     private String mobile;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName) &&
+                Objects.equals(company, that.company) &&
+                Objects.equals(address, that.address) &&
+                Objects.equals(home, that.home) &&
+                Objects.equals(mobile, that.mobile) &&
+                Objects.equals(email, that.email);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(firstName, lastName, company, address, home, mobile, email, id);
+    }
+
     @Column(name = "work")
     @Type(type = "text")
+
     private String work;
     @Type(type = "text")
     private String fax;
@@ -319,23 +341,6 @@ public class ContactData {
     public ContactData withAllEmails(String allEmails) {
         this.allEmails = allEmails;
         return this;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return Objects.equals(firstName, that.firstName) &&
-                Objects.equals(lastName, that.lastName) &&
-                Objects.equals(address, that.address) &&
-                Objects.equals(id, that.id);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(firstName, lastName, address, id);
     }
 
     @Override

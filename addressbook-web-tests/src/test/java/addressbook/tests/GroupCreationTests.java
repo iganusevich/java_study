@@ -54,10 +54,10 @@ public class GroupCreationTests extends TestBase {
     public void testGroupCreationTests(GroupData group) {
         //GroupData group = new GroupData().withName(name).withHeader(header).withFooter(footer);
         app.goTo().groups();
-        Groups before = app.groups().all();
+        Groups before = app.db().groups();
         app.groups().create(group);
         assertThat(app.groups().getGroupCount(), equalTo(before.size() + 1));
-        Groups after = app.groups().all();
+        Groups after = app.db().groups();
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
