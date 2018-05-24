@@ -3,11 +3,13 @@ package addressbook.tests;
 import addressbook.models.ContactData;
 import addressbook.models.Contacts;
 import addressbook.models.GroupData;
+import addressbook.models.Groups;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -41,14 +43,23 @@ public class ContactCreationTests extends TestBase {
         return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
     }
 
+    @BeforeMethod
+    public void ensurePreConditions(){
+        if (app.db().groups().size() == 0){
+            app.goTo().groups();
+            app.groups().create(new GroupData().withName("test1").withHeader("logo1").withFooter("footer1"));
+        }
+    }
+
 
     @Test (dataProvider = "validContactsFromJSON")
     public void testContactCreation(ContactData contact) {
+        Groups groups = app.db().groups();
         app.goTo().home();
         Contacts before = app.db().contacts();
         app.goTo().addContact();
         //ContactData contact = new ContactData().withFirstName("IreneBD").withLastName("Test").withAddress("Address");
-        app.contacts().create(contact);
+        app.contacts().create(contact.inGroup(groups.iterator().next()));
         app.goTo().home();
         Assert.assertEquals(app.contacts().getContactCount(), before.size() + 1);
         Contacts after = app.db().contacts();

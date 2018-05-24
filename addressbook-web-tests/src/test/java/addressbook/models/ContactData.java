@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
 
 
@@ -14,6 +15,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @javax.persistence.Table(name = "addressbook")
@@ -42,26 +44,7 @@ public class ContactData {
     @Type(type = "text")
     private String mobile;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return id == that.id &&
-                Objects.equals(firstName, that.firstName) &&
-                Objects.equals(lastName, that.lastName) &&
-                Objects.equals(company, that.company) &&
-                Objects.equals(address, that.address) &&
-                Objects.equals(home, that.home) &&
-                Objects.equals(mobile, that.mobile) &&
-                Objects.equals(email, that.email);
-    }
 
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(firstName, lastName, company, address, home, mobile, email, id);
-    }
 
     @Column(name = "work")
     @Type(type = "text")
@@ -100,6 +83,19 @@ public class ContactData {
     private String allPhones;
     @Transient
     private  String allEmails;
+
+    @ManyToMany (fetch = FetchType.EAGER)
+    @JoinTable(name = "address_in_groups",
+            joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
+
+    public Groups getGroups() {
+        return new Groups(groups);
+    }
+
+    public void setGroups(Set<GroupData> groups) {
+        this.groups = groups;
+    }
 
     public String getAllEmails() {
         return allEmails;
@@ -352,6 +348,30 @@ public class ContactData {
                 ", id='" + id + '\'' +
                 '}';
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName) &&
+                Objects.equals(company, that.company) &&
+                Objects.equals(address, that.address) &&
+                Objects.equals(home, that.home) &&
+                Objects.equals(mobile, that.mobile) &&
+                Objects.equals(email, that.email);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(firstName, lastName, company, address, home, mobile, email, id);
+    }
 
 
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
+        return this;
+    }
 }

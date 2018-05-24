@@ -1,10 +1,12 @@
 package addressbook.appmanager;
 
+import addressbook.models.ContactData;
 import addressbook.models.GroupData;
 import addressbook.models.Groups;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -98,5 +100,24 @@ public class GroupHelper extends HelperBase {
             groupCache.add(new GroupData().withId(id).withName(name));
         }
         return  groupCache;
+    }
+    public boolean isGroupInGroups(GroupData group, Groups groups) {
+        return groups.stream().anyMatch(g -> g.equals(group));
+    }
+
+    public GroupData selectNewGroupForContact(ContactData contact, Groups groups) {
+        GroupData group = null;
+        for(GroupData g: groups){
+            if(!isGroupInGroups(g, contact.getGroups())){
+                group = g;
+                break;
+            }
+        }
+        return group;
+    }
+
+    public void goToGroupContacts(GroupData group) {
+        new Select(wd.findElement(By.name("group")))
+                .selectByVisibleText(group.getName());
     }
 }

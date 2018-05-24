@@ -2,9 +2,13 @@ package addressbook.appmanager;
 
 import addressbook.models.ContactData;
 import addressbook.models.Contacts;
+import addressbook.models.GroupData;
+import addressbook.models.Groups;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -19,7 +23,7 @@ public class ContactHelper extends HelperBase {
         wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    public void fillInForm(ContactData contactData) {
+    public void fillInForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"),contactData.getFirstName());
         //type(By.name("middlename"), contactData.getMiddleName());
         type(By.name("lastname"), contactData.getLastName());
@@ -47,6 +51,21 @@ public class ContactHelper extends HelperBase {
         //type(By.name("phone2"), contactData.getPhone2());
         //type(By.name("notes"), contactData.getNotes());
 
+        if (creation){
+            if(contactData.getGroups().size() > 0){
+                Assert.assertTrue(contactData.getGroups().size() == 1);
+                new Select(wd.findElement(By.name("new_group")))
+                        .selectByVisibleText(contactData.getGroups().iterator().next().getName());
+            }
+        }
+
+    }
+
+    private void selectGroupForContact(ContactData contactData, GroupData group) {
+        if(contactData.getGroups().size() > 0){
+            new Select(wd.findElement(By.name("to_group")))
+                    .selectByVisibleText(group.getName());
+        }
     }
 
     public void selectEditById(int id) {
@@ -58,7 +77,7 @@ public class ContactHelper extends HelperBase {
     }
 
 
-    public void selectDeleteById(int id) {
+    public void selectById(int id) {
         wd.findElement(By.cssSelector("input[id='" + id + "']")).click();
     }
 
@@ -74,7 +93,7 @@ public class ContactHelper extends HelperBase {
 
     public void create(ContactData contact) {
 
-        fillInForm(contact);
+        fillInForm(contact, true);
         submitContactCreation();
         contactCache = null;
         contactsPage();
@@ -84,14 +103,14 @@ public class ContactHelper extends HelperBase {
     }
     public void modify(ContactData contact) {
         selectEditById(contact.getId());
-        fillInForm(contact);
+        fillInForm(contact, false);
         submitModification();
         contactCache = null;
         contactsPage();
     }
 
     public void delete(ContactData contact) {
-        selectDeleteById(contact.getId());
+        selectById(contact.getId());
         submitDeletion();
         confirmDeletion();
         contactCache = null;
@@ -152,4 +171,36 @@ public class ContactHelper extends HelperBase {
                 .withEmail(email).withEmail2(email2).withEmail3(email3);
     }
 
+    public void addContactToGroup(ContactData contact, GroupData group) {
+        selectById(contact.getId());
+        selectGroupForContact(contact, group);
+        submitContactToGroup();
+
+
+    }
+
+    private void submitContactToGroup() {
+        click(By.name("add"));
+    }
+
+    public ContactData selectContactNotInAllGroups(Contacts contacts, Groups groups) {
+        ContactData contact = null;
+        for (ContactData c : contacts) {
+            if (!c.getGroups().equals(groups)) {
+                contact = c;
+                break;
+            }
+        }
+        return contact;
+
+    }
+
+    public void submitRemovalFromGroup() {
+        click(By.name("remove"));
+    }
+
+    public void deleteContactFromGroup(ContactData contact) {
+        selectById(contact.getId());
+        submitRemovalFromGroup();
+    }
 }
