@@ -46,7 +46,6 @@ public class ContactAddToGroupTests extends TestBase{
         app.contacts().addContactToGroup(contact, group);
         Assert.assertEquals(app.db().contactById(contact.getId()).getGroups()
                 .stream().anyMatch(g-> g.getId() == group.getId()), true);
-
     }
 
 
