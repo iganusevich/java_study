@@ -1,0 +1,48 @@
+POST http://localhost/mantisbt-1.2.19/login_page.php?username=administrator&password=root
+Accept:*/*
+Cache-Control:no-cache
+
+username=administrator password=root
+
+<> 2018-05-31T121447.200.html
+
+###
+
+POST http://localhost/mantisbt-1.2.19/login_page.php?username=administrator&password=root
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-05-30T053118.200.html
+
+###
+
+POST http://localhost/mantisbt-1.2.19/login_page.php?username=administrator&password=root&secure_session=on&return=index.php
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-05-30T052812.200.html
+
+###
+
+POST http://localhost/mantisbt-1.2.19/login_page.php?username=administrator&password=root&secure_session=on&return=index.php
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-05-29T051153.200.html
+
+###
+
+POST http://localhost/mantisbt-1.2.19?username=administrator&password=root&secure_session=on&return=index.php
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-05-29T051121.301.html
+
+###
+
+POST http://http//localhost?username=administrator&password=root&secure_session=on&return=index.php
+Accept:*/*
+Cache-Control:no-cache
+
+###
+

@@ -2,23 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532965cc-e3b4-45d5-a0ad-14a1175e5605" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/SMG.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/SMG_main.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/SMG_test.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_main.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_test.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/TestBase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/local.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__commons_net_commons_net_3_6.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__javax_activation_activation_1_1_1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__javax_mail_mail_1_4_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__org_subethamail_subethasmtp_3_1_7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__ru_lanwen_verbalregex_java_verbal_expressions_1_5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/FtpHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/HelperBase.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/HttpSession.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/MailHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/RegistrationHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/models/MailMessage.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/LoginTests.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/PasswordChangeTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/config_inc.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_main.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_test.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_test.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactAddToGroupTests.java" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/addressbook/tests/ContactAddToGroupTests.java" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactAddToGroupTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactAddToGroupTests.class" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeleteFromGroup.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeleteFromGroup.class" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/local.properties" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/local.properties" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/build.gradle" afterPath="$PROJECT_DIR$/../mantis-tests/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/TestBase.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/TestBase.java" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/resources/local.properties" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/local.properties" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -207,10 +216,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="469" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1022" />
     <option name="y" value="37" />
-    <option name="width" value="1400" />
+    <option name="width" value="847" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -243,7 +252,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DB2 (LUW)&#10;DB2 (JTOpen)&#10;DDL Data Source" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook-web-tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mantis-tests" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -371,15 +380,19 @@
       <workItem from="1525425301663" duration="609000" />
       <workItem from="1525686879867" duration="599000" />
       <workItem from="1525787171019" duration="615000" />
-      <workItem from="1526295028844" duration="596000" />
+      <workItem from="1526295028844" duration="1195000" />
+      <workItem from="1527677193344" duration="706000" />
+      <workItem from="1528188192194" duration="598000" />
+      <workItem from="1528369447237" duration="934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24605000" />
+    <option name="totallyTimeSpent" value="27442000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
