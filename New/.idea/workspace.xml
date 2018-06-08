@@ -2,32 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532965cc-e3b4-45d5-a0ad-14a1175e5605" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__commons_net_commons_net_3_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__javax_activation_activation_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__javax_mail_mail_1_4_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__org_subethamail_subethasmtp_3_1_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__ru_lanwen_verbalregex_java_verbal_expressions_1_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/FtpHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/HelperBase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/HttpSession.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/MailHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/RegistrationHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/models/MailMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/LoginTests.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/PasswordChangeTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/config_inc.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/DbHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ManageUsersHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/NavigationHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/SessionHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/models/User.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/models/Users.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/HbConnectionMantisTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/hibernate.cfg.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/logback.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_main.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_main.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_test.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_test.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactAddToGroupTests.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactAddToGroupTests.class" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeleteFromGroup.class" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/ContactDeleteFromGroup.class" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/Coordinator.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/local.properties" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/local.properties" />
       <change beforePath="$PROJECT_DIR$/../mantis-tests/build.gradle" afterPath="$PROJECT_DIR$/../mantis-tests/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/ApplicationManager.class" afterPath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/ApplicationManager.class" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/MailHelper.class" afterPath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/MailHelper.class" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/tests/RegistrationTests.class" afterPath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/tests/RegistrationTests.class" />
       <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/TestBase.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/TestBase.java" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/resources/local.properties" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/local.properties" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/MailHelper.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/MailHelper.java" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/PasswordChangeTest.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/PasswordChangeTest.java" />
+      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -216,7 +217,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1022" />
     <option name="y" value="37" />
     <option name="width" value="847" />
@@ -383,15 +384,15 @@
       <workItem from="1526295028844" duration="1195000" />
       <workItem from="1527677193344" duration="706000" />
       <workItem from="1528188192194" duration="598000" />
-      <workItem from="1528369447237" duration="934000" />
+      <workItem from="1528369447237" duration="1811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27442000" />
+    <option name="totallyTimeSpent" value="28319000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
