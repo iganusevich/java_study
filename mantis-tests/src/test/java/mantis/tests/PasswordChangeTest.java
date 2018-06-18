@@ -30,6 +30,7 @@ public class PasswordChangeTest extends TestBase {
         String password = "root1";
         User user = app.db().users().iterator().next();
         app.session().login(adminUser, adminPassword);
+        app.navigateTo().manage();
         app.navigateTo().manageUsers();
         app.manageUsers().resetPassword(user.getUsername());
         List<MailMessage> mailMessages = app.mail().waitForMail(1, 10000);

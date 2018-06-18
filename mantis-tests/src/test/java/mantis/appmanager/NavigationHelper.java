@@ -12,4 +12,8 @@ public class NavigationHelper extends HelperBase {
     public void manageUsers() {
         wd.findElement(By.cssSelector("a[href*='manage_user_page.php']")).click();
     }
+
+    public void manage() {
+        wd.findElement(By.cssSelector("a[href*='manage_overview_page.php']")).click();
+    }
 }

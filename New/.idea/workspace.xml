@@ -2,33 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532965cc-e3b4-45d5-a0ad-14a1175e5605" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/DbHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ManageUsersHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/NavigationHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/SessionHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/models/User.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/models/Users.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/HbConnectionMantisTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/hibernate.cfg.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/resources/logback.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_3_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/libraries/Gradle__org_testng_testng_6_14_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/soap-tests.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/soap-tests_main.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/soap-tests_test.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../soap-tests/src/main/resources/geoipservice.wsdl" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/misc.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_main.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/addressbook-web-tests_test.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_main.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_main.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_test.iml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/modules/mantis-tests_test.iml" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../addressbook-web-tests/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/addressbook/tests/Coordinator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/local.properties" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/local.properties" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/build.gradle" afterPath="$PROJECT_DIR$/../mantis-tests/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/ApplicationManager.class" afterPath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/ApplicationManager.class" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/MailHelper.class" afterPath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/appmanager/MailHelper.class" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/tests/RegistrationTests.class" afterPath="$PROJECT_DIR$/../mantis-tests/out/test/classes/mantis/tests/RegistrationTests.class" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/MailHelper.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/MailHelper.java" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/PasswordChangeTest.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/PasswordChangeTest.java" />
-      <change beforePath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" afterPath="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/RegistrationTests.java" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/production/classes/different/Collections.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/production/classes/different/Equation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/production/classes/different/Point.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/production/classes/different/Primes.class" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -385,11 +379,12 @@
       <workItem from="1527677193344" duration="706000" />
       <workItem from="1528188192194" duration="598000" />
       <workItem from="1528369447237" duration="1811000" />
+      <workItem from="1528905704764" duration="206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28319000" />
+    <option name="totallyTimeSpent" value="28525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
