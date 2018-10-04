@@ -76,7 +76,6 @@
     <orderEntry type="library" name="Gradle: axis:axis-wsdl4j:1.5.1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.axis:axis-jaxrpc:1.4" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.axis:axis-saaj:1.4" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: mysql:mysql-connector-java:8.0.11" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="mantis-tests_main" />
 </module>

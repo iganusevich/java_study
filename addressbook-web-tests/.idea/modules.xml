@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sandbox.iml" filepath="$PROJECT_DIR$/.idea/modules/Sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sandbox_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sandbox_main.iml" group="Sandbox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sandbox_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sandbox_test.iml" group="Sandbox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zibby.iml" filepath="$PROJECT_DIR$/.idea/modules/Zibby.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zibby_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Zibby_main.iml" group="Zibby" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zibby_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Zibby_test.iml" group="Zibby" />
       <module fileurl="file://$PROJECT_DIR$/addressbook-web-tests.iml" filepath="$PROJECT_DIR$/addressbook-web-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" group="addressbook-web-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" group="addressbook-web-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-tests_main.iml" group="mantis-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mantis-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mantis-tests_test.iml" group="mantis-tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/rest-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rest-tests_main.iml" group="rest-tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rest-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rest-tests_test.iml" group="rest-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/soap-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/soap-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/soap-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/soap-tests_main.iml" group="soap-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/soap-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/soap-tests_test.iml" group="soap-tests" />

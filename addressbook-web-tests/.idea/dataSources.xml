@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="sia2@localhost" uuid="dc4528b8-928c-4f97-aaa2-aa145c3c3129">
+      <driver-ref>db2</driver-ref>
+      <jdbc-driver>com.ibm.db2.jcc.DB2Driver</jdbc-driver>
+      <jdbc-url>jdbc:db2://localhost:50050/sia2</jdbc-url>
+      <driver-properties>
+        <property name="retrieveMessagesFromServerOnGetMessage" value="true" />
+        <property name="clientProgramName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
