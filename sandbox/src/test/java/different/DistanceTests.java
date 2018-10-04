@@ -3,6 +3,8 @@ package different;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.awt.*;
+
 public class DistanceTests {
     @Test
     public void testDistabce(){
