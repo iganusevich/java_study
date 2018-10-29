@@ -14,6 +14,8 @@
     <bytecodeTargetLevel target="1.8">
       <module name="addressbook-web-tests_main" target="1.8" />
       <module name="addressbook-web-tests_test" target="1.8" />
+      <module name="java-example_main" target="1.8" />
+      <module name="java-example_test" target="1.8" />
       <module name="mantis-tests_main" target="1.8" />
       <module name="mantis-tests_test" target="1.8" />
       <module name="rest-tests_main" target="1.8" />
