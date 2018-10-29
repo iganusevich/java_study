@@ -27,7 +27,7 @@ public class ApplicationManager {
     WebDriver wd;
 
     private RetailerHelper retailerHelper;
-
+    private CustomerHelper customerHelper;
 
 
     public ApplicationManager(String browser) {
@@ -53,10 +53,13 @@ public class ApplicationManager {
 
 
         retailerHelper = new RetailerHelper(wd);
-        //retailerHelper.retailerLogin(properties.getProperty("web.adminLogin"),properties.getProperty("web.adminPassword"));
+        customerHelper = new CustomerHelper(wd);
+
         }
 
-
+    public HttpSessionHelper phoneInfo() {
+        return new HttpSessionHelper(this);
+    }
 
     public void stop() {
         wd.quit();
@@ -67,6 +70,9 @@ public class ApplicationManager {
     }
 
 
+    public CustomerHelper customer() {   return (customerHelper); }
 
-
+    public String getProperty1(String key) {
+        return properties.getProperty(key);
+    }
 }

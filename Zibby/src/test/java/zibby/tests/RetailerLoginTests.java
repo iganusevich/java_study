@@ -10,10 +10,6 @@ public class RetailerLoginTests extends TestBase {
     public void retailerLoginTests() {
         app.retailer().retailerLogin("nadim.cognical","test");
         app.retailer().openApplication(Integer.toString(590947));
-        
-        int i = 1;
-
-
 
     }
     

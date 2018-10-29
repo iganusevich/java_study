@@ -52,7 +52,7 @@ public class HelperBase {
     }
 
     protected void waitUntilElementPresent(By locator){
-        WebDriverWait dynamicElement = new WebDriverWait(wd, 30);
+        WebDriverWait dynamicElement = new WebDriverWait(wd, 15);
         dynamicElement.until(ExpectedConditions.presenceOfElementLocated(locator));
 
     }
