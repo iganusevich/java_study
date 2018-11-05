@@ -47,6 +47,16 @@ public class MyFirstTest extends TestBase {
         }
     }
 
+    @Test
+    public void mySecondTest(){
+        driver.navigate().to("http://localhost/litecart/");
+        driver.findElement(By.xpath("//a[. = 'Popular Products']")).click();
+        List<WebElement> items = driver.findElements(By.cssSelector("div#popular-products div[data-name]"));
+        for (WebElement item : items){
+            areElementsPresentInWebElem(item, By.cssSelector("div.sticker"));
+        }
+    }
+
     @After
     public void stop(){
         driver.quit();

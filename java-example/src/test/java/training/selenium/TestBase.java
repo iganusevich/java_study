@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.HasCapabilities;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -20,6 +21,10 @@ public class TestBase {
 
     public boolean areElementsPresent(By locator ){
         return driver.findElements(locator).size()>0;
+    }
+
+    public boolean areElementsPresentInWebElem(WebElement element, By locator){
+      return element.findElements(locator).size()>0;
     }
 
     @Before
