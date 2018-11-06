@@ -11,7 +11,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
+
+import static org.junit.Assert.assertTrue;
 
 public class TestBase {
 
@@ -25,6 +30,19 @@ public class TestBase {
 
     public boolean areElementsPresentInWebElem(WebElement element, By locator){
       return element.findElements(locator).size()>0;
+    }
+
+    public List<String> getTextFromListObjects(By locator){
+        return driver.findElements(locator)
+                .stream()
+                .map((e)-> e.getText())
+                .collect(Collectors.toList());
+    }
+
+    public boolean isAlphabetic(List<String> original){
+        List<String> ordered = new ArrayList<>(original);
+        return ordered.equals(original);
+
     }
 
     @Before

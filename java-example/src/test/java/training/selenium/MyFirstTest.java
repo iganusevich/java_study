@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -55,6 +56,47 @@ public class MyFirstTest extends TestBase {
         for (WebElement item : items){
             areElementsPresentInWebElem(item, By.cssSelector("div.sticker"));
         }
+    }
+
+    @Test
+    public void myThirdTest(){
+        driver.navigate().to("http://localhost/litecart/admin/");
+        driver.findElement(By.name("username")).sendKeys("admin");
+        driver.findElement(By.name("password")).sendKeys("admin");
+        driver.findElement(By.xpath("//button[@value='Login']")).click();
+        wait.until(titleIs("My Store"));
+        driver.findElement(By.xpath("//span[. = 'Countries']")).click();
+        List<String> countries = getTextFromListObjects(By.xpath("//tbody//td/a[not(@title)]"));
+        assertTrue(isAlphabetic(countries));
+
+
+        List<String> indexes = getTextFromListObjects(By.xpath("//tbody/tr/td[4]"));
+        for (String index : indexes){
+             WebElement raw = driver.findElement(By.xpath("//td[. = '" + index + "']/.."));
+            int num_zones = Integer.parseInt(raw.findElement(By.cssSelector("td.text-center")).getText());
+            if (num_zones > 0){
+                raw.findElement(By.xpath(".//a[not(@title)]")).click();
+                List<String> zones = driver.findElements(By.cssSelector("input[name$='[name]']"))
+                        .stream()
+                        .map((e)-> e.getAttribute("value"))
+                        .collect(Collectors.toList());
+                assertTrue(isAlphabetic(zones));
+                driver.findElement(By.xpath("//span[. = 'Countries']")).click();
+            }
+
+        }
+
+        List<WebElement> raws = driver.findElements(By.cssSelector("tbody tr"));
+
+        List<String> num_zones = getTextFromListObjects(By.cssSelector("tbody td.text-center"));
+        for (String num : num_zones){
+            if (Integer.parseInt(num) > 0){
+
+            }
+        }
+
+
+
     }
 
     @After
