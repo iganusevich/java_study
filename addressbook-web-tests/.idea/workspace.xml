@@ -155,8 +155,8 @@
       <file leaf-file-name="MyFirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/MyFirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2727,14 +2727,11 @@
       <workItem from="1534761120054" duration="621000" />
       <workItem from="1536838707181" duration="35396000" />
       <workItem from="1539081700676" duration="14245000" />
-      <workItem from="1539250013511" duration="57059000" />
+      <workItem from="1539250013511" duration="57196000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 15h 56m 27s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 15h 57m 15s.xml">
       <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
     </history-entry>
@@ -2762,9 +2759,12 @@
     <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 23m 44s.xml">
       <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 29m 14s.xml">
+      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390730000" />
+    <option name="totallyTimeSpent" value="390867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -3313,8 +3313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="660">
+          <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

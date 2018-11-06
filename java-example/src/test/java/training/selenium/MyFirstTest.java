@@ -86,15 +86,6 @@ public class MyFirstTest extends TestBase {
 
         }
 
-        List<WebElement> raws = driver.findElements(By.cssSelector("tbody tr"));
-
-        List<String> num_zones = getTextFromListObjects(By.cssSelector("tbody td.text-center"));
-        for (String num : num_zones){
-            if (Integer.parseInt(num) > 0){
-
-            }
-        }
-
 
 
     }
