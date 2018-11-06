@@ -155,8 +155,8 @@
       <file leaf-file-name="MyFirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/MyFirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+            <state relative-caret-position="408">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,8 +167,8 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+            <state relative-caret-position="171">
+              <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#888#889#0" expanded="true" />
@@ -2421,7 +2421,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyFirstTest.myThirdTest">
+  <component name="RunManager" selected="JUnit.MyFirstTest.myFourthTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="WIDTH" value="400" />
@@ -2456,6 +2456,31 @@
       <option name="MAIN_CLASS_NAME" value="training.selenium.MyFirstTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MyFirstTest.myFourthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="training.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java-example_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="training.selenium" />
+      <option name="MAIN_CLASS_NAME" value="training.selenium.MyFirstTest" />
+      <option name="METHOD_NAME" value="myFourthTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -2576,38 +2601,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PreApprovalTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zibby.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Zibby_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="zibby.tests" />
-      <option name="MAIN_CLASS_NAME" value="zibby.tests.PreApprovalTests" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../zibby" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration name="SoapTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -2678,19 +2671,19 @@
       <Port>5050</Port>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.PreApprovalTests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MyFirstTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.GroupCreationTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MyFirstTest.mySecondTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MyFirstTest.myThirdTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MyFirstTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.GroupCreationTests" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MyFirstTest.mySecondTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MyFirstTest.myThirdTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MyFirstTest.myFourthTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MyFirstTest.myThirdTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MyFirstTest.mySecondTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MyFirstTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.GroupCreationTests" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.PreApprovalTests" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MyFirstTest.myFourthTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MyFirstTest.myThirdTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MyFirstTest.mySecondTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MyFirstTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -2727,48 +2720,47 @@
       <workItem from="1534761120054" duration="621000" />
       <workItem from="1536838707181" duration="35396000" />
       <workItem from="1539081700676" duration="14245000" />
-      <workItem from="1539250013511" duration="59267000" />
+      <workItem from="1539250013511" duration="63909000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 11m 50s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 17h 35m 39s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 12m 34s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 17h 36m 16s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 13m 42s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 17h 46m 18s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 15m 53s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 17h 54m 40s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 20m 42s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 18h 03m 22s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 23m 06s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 18h 04m 11s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 23m 44s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 18h 05m 14s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 29m 14s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 18h 07m 16s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 17h 02m 27s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    <history-entry file="MyFirstTest_myFourthTest - 2018.11.06 at 18h 15m 05s.xml">
+      <configuration name="MyFirstTest.myFourthTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 17h 03m 15s.xml">
       <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="392938000" />
+    <option name="totallyTimeSpent" value="397580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31012657" sideWeight="0.503125" order="2" side_tool="true" content_ui="tabs" />
@@ -2780,7 +2772,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40400845" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40400845" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2788,7 +2780,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4156118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4156118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2658228" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2845,8 +2837,14 @@
           <properties />
           <option name="timeStamp" value="147" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/MyFirstTest.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="173" />
+      <option name="time" value="176" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3301,8 +3299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        <state relative-caret-position="171">
+          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#888#889#0" expanded="true" />
@@ -3313,8 +3311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

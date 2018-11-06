@@ -90,10 +90,26 @@ public class MyFirstTest extends TestBase {
             assertTrue(isAlphabetic(zones));
             
         }
-        
+    }
 
+    @Test
+    public void myFourthTest(){
+        int product_num = 0;
+        driver.navigate().to("http://localhost/litecart/");
+        List<WebElement> camp_prod = driver.findElements(By.cssSelector("div#box-campaign-products a.link"));
+//        List<String> item_att_home = collectPoductInfo(By.cssSelector("div.name"),
+//                By.cssSelector("s.regular-price"), By.cssSelector("strong.campaign-price"),camp_prod.get(product_num));
+//
+//        camp_prod.get(product_num).click();
+//        List<String> item_att_product = collectPoductInfo(By.cssSelector("h1.title"),
+//                By.cssSelector("del.regular-price"),
+//                By.cssSelector("strong.campaign-price"),
+//                driver.findElement(By.cssSelector("div#box-product")));
+//        assertTrue(item_att_home.equals(item_att_product));
 
+        String color = camp_prod.get(product_num).findElement(By.cssSelector("s.regular-price")).getCssValue("color");
 
+        int i = 0;
     }
 
     @After

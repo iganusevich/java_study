@@ -54,6 +54,14 @@ public class TestBase {
         wait.until(titleIs("My Store"));
     }
 
+    public List<String> collectPoductInfo(By locator1, By locator2, By locator3, WebElement we){
+        List<String> list = new ArrayList<>();
+        list.add(we.findElement(locator1).getText());
+        list.add(we.findElement(locator2).getText());
+        list.add(we.findElement(locator3).getText());
+        return list;
+    }
+
     @Before
     public void start() {
         if (tlDriver.get() != null) {
