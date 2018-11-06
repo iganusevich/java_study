@@ -155,8 +155,8 @@
       <file leaf-file-name="MyFirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/MyFirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+            <state relative-caret-position="341">
+              <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,12 +167,12 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="367">
+              <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2727,17 +2727,11 @@
       <workItem from="1534761120054" duration="621000" />
       <workItem from="1536838707181" duration="35396000" />
       <workItem from="1539081700676" duration="14245000" />
-      <workItem from="1539250013511" duration="57196000" />
+      <workItem from="1539250013511" duration="59267000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 15h 57m 15s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 00m 46s.xml">
-      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 11m 50s.xml">
       <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
     </history-entry>
@@ -2762,9 +2756,15 @@
     <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 16h 29m 14s.xml">
       <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 17h 02m 27s.xml">
+      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyFirstTest_myThirdTest - 2018.11.06 at 17h 03m 15s.xml">
+      <configuration name="MyFirstTest.myThirdTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390867000" />
+    <option name="totallyTimeSpent" value="392938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2846,7 +2846,7 @@
           <option name="timeStamp" value="147" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="172" />
+      <option name="time" value="173" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3301,20 +3301,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="367">
+          <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="86" column="9" lean-forward="false" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        <state relative-caret-position="341">
+          <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

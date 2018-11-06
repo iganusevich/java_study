@@ -60,11 +60,7 @@ public class MyFirstTest extends TestBase {
 
     @Test
     public void myThirdTest(){
-        driver.navigate().to("http://localhost/litecart/admin/");
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.xpath("//button[@value='Login']")).click();
-        wait.until(titleIs("My Store"));
+        loginAdmin();
         driver.findElement(By.xpath("//span[. = 'Countries']")).click();
         List<String> countries = getTextFromListObjects(By.xpath("//tbody//td/a[not(@title)]"));
         assertTrue(isAlphabetic(countries));
@@ -85,6 +81,16 @@ public class MyFirstTest extends TestBase {
             }
 
         }
+        
+        driver.findElement(By.xpath("//span[. = 'Geo Zones']")).click();
+        List<String> geo_zones = getTextFromListObjects(By.xpath("//tbody//a[not(@title)]"));
+        for (String zone : geo_zones){
+            driver.findElement(By.xpath("//a[. = '" + zone + "']")).click();
+            List<String> zones = getTextFromListObjects(By.xpath("//input[contains(@name, 'country_code')]/.."));
+            assertTrue(isAlphabetic(zones));
+            
+        }
+        
 
 
 
