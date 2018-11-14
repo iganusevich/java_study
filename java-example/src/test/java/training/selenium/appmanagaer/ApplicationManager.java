@@ -1,9 +1,9 @@
 package training.selenium.appmanagaer;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
@@ -41,6 +41,13 @@ public class ApplicationManager {
                 .collect(Collectors.toList());
     }
 
+    public List<String> getValueFromListObjects(By locator){
+        return driver.findElements(locator)
+                .stream()
+                .map((e)-> e.getCssValue("value"))
+                .collect(Collectors.toList());
+    }
+
     public boolean isAlphabetic(List<String> original){
         List<String> ordered = new ArrayList<>(original);
         return ordered.equals(original);
@@ -57,6 +64,21 @@ public class ApplicationManager {
     public void loginAdmin(){
         driver.navigate().to("http://localhost/litecart/admin/");
         login("admin", "admin");
+    }
+
+    public void openLiteCart(){
+        openPage("http://localhost/litecart/");
+    }
+
+    public boolean isElementPresent(By locator) {
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (InvalidSelectorException ex) {
+            throw ex;
+        } catch (NoSuchElementException ex) {
+            return false;
+        }
     }
 
     public void init() {

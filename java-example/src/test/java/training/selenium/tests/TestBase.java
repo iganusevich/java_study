@@ -1,4 +1,5 @@
 package training.selenium.tests;
+
 import org.junit.After;
 import org.junit.Before;
 import org.testng.annotations.AfterSuite;
@@ -9,12 +10,12 @@ public class TestBase {
 
     protected final ApplicationManager app = new ApplicationManager();
 
-    @Before
+    @BeforeSuite
     public void start() {
         app.init();
     }
 
-    @After
+    @AfterSuite
     public void tearDown() {
         app.stop();
     }

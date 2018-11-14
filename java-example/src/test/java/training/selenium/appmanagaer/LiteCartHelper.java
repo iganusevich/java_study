@@ -1,13 +1,18 @@
 package training.selenium.appmanagaer;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import training.selenium.models.MyColor;
 import training.selenium.models.Product;
+import training.selenium.models.User;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class LiteCartHelper {
     private WebDriver driver;
@@ -75,9 +80,49 @@ public class LiteCartHelper {
     public MyColor getColor(WebElement we){
         String color_st = we.getCssValue("color");
         String[] numbers = color_st.replace("rgba(", "").replace(")", "")
-                .replace(" ", "").split(",");
+                .replace(" ", "").replace("rgb(", "")
+                .split(",");
+        ArrayList numbers_list = new ArrayList<String>(Arrays.asList(numbers));
+        if(numbers_list.size() < 4){
+            numbers_list.add("-1");
+        }
         MyColor color = new MyColor();
-        return color.withRed(Integer.parseInt(numbers[0])).withGreen(Integer.parseInt(numbers[1]))
-                .withBlue(Integer.parseInt(numbers[2])).withAlpha(Integer.parseInt(numbers[3]));
+        return color.withRed(Integer.parseInt(numbers_list.get(0).toString()))
+                .withGreen(Integer.parseInt(numbers_list.get(1).toString()))
+                .withBlue(Integer.parseInt(numbers_list.get(2).toString()))
+                .withAlpha(Integer.parseInt(numbers_list.get(3).toString()));
     }
+
+
+    public User registrate(User user) {
+        int randomNum = ThreadLocalRandom.current().nextInt(10000, 100000);
+        driver.findElement(By.cssSelector("li.account a.dropdown-toggle")).click();
+        driver.findElement(By.cssSelector("ul.dropdown-menu a[href*= create_account]")).click();
+        driver.findElement(By.cssSelector("input[name=firstname]")).sendKeys(user.getFirst_name());
+        driver.findElement(By.cssSelector("input[name=lastname]")).sendKeys(user.getLast_name());
+        driver.findElement(By.cssSelector("input[name=postcode]")).sendKeys(user.getPostal_code());
+        Select country = new Select(driver.findElement(By.cssSelector("select[name=country_code]")));
+        country.selectByValue(user.getCountry());
+        Select state = new Select(driver.findElement(By.cssSelector("select[name=zone_code]")));
+        state.selectByValue(user.getState());
+        String account = user.getEmail().replace("random", Integer.toString(randomNum));
+        driver.findElement(By.cssSelector("input[name=email]:not([placeholder])"))
+                .sendKeys(account);
+        driver.findElement(By.cssSelector("input[name=password]:not([placeholder])")).sendKeys(user.getPassword());
+        driver.findElement(By.cssSelector("input[name=confirmed_password]")).sendKeys(user.getPassword());
+        driver.findElement(By.cssSelector("button[name=create_account]")).click();
+        return user.withEmail(account);
+    }
+
+    public void logOut() {
+        driver.findElement(By.cssSelector("li.account a.dropdown-toggle")).click();
+        driver.findElement(By.cssSelector("ul.dropdown-menu a[href*= logout]")).click();
+    }
+
+    public void logIn(User user) {
+        driver.findElement(By.cssSelector("li.account a.dropdown-toggle")).click();
+        driver.findElement(By.cssSelector("input[name=email]")).sendKeys(user.getEmail());
+        driver.findElement(By.cssSelector("input[name=password]")).sendKeys(user.getPassword());
+        driver.findElement(By.cssSelector("button[name=login]")).click();
+        }
 }

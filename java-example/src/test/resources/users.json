@@ -1,0 +1,11 @@
+[
+  {
+    "first_name": "test 0",
+    "last_name": "last name 0",
+    "postal_code": "12345",
+    "country": "US",
+    "state": "CO",
+    "email": "test0_random@test.com",
+    "password": "QWE123QWE!"
+  }
+]

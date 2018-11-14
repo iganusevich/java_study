@@ -1,16 +1,44 @@
 package training.selenium.tests;
 
 
-import org.junit.Test;
-import org.openqa.selenium.*;
-import training.selenium.models.Product;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.DataProvider;
+
+import org.testng.annotations.Test;
+import training.selenium.models.Product;
+import training.selenium.models.User;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertTrue;
 
 public class MyFirstTest extends TestBase {
+
+    @DataProvider
+    public Iterator<Object[]> validUsersFromJSON() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/users.json")));
+        String json = "";
+        String line = reader.readLine();
+        while (line != null){
+            json += line;
+            line = reader.readLine();
+        }
+        Gson gson = new Gson();
+        List<User> users = gson.fromJson(json, new TypeToken<List<User>>(){}.getType());
+        return users.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+    }
 
 
 
@@ -39,7 +67,7 @@ public class MyFirstTest extends TestBase {
 
 
     @Test
-    public void mySeondTest(){
+    public void mySecondTest(){
         app.openPage("http://localhost/litecart/");
         app.getAdminHelper().openCategoryHomePage("Popular Products");
         checkStickers();
@@ -76,7 +104,7 @@ public class MyFirstTest extends TestBase {
     }
 
     private void checkCountrieZonesAlphabetical() {
-        List<String> indexes = app.getTextFromListObjects(By.xpath("//tbody/tr/td[4]"));
+        List<String> indexes = app.getTextFromListObjects((By.xpath("//tbody/tr/td[4]")));
         for (String index : indexes){
              WebElement raw = app.driver.findElement(By.xpath("//td[. = '" + index + "']/.."));
             int num_zones = Integer.parseInt(raw.findElement(By.cssSelector("td.text-center")).getText());
@@ -119,6 +147,28 @@ public class MyFirstTest extends TestBase {
         assertTrue(product.isDiscPriceStrong());
         assertTrue(product.getDiscountPriceColor().isRed());
         assertTrue(product.isDiscPriceBigger());
+    }
+
+
+
+    @Test(dataProvider = "validUsersFromJSON")
+    public void registration(User user){
+        app.openLiteCart();
+        user = app.getLiteCartHelper().registrate(user);
+        app.getLiteCartHelper().logOut();
+        app.getLiteCartHelper().logIn(user);
+        app.getLiteCartHelper().logOut();
+    }
+
+
+    @Test
+    public void testProductCreation(){
+        app.loginAdmin();
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        Product product = new Product().withName("NewProduct_" + timestamp.getTime())
+                .withRegularPrice("500");
+        app.getAdminHelper().addProduct(product, timestamp);
+        assertTrue(app.isElementPresent(By.xpath(String.format("//a[text()='%s']", product.getName()))));
     }
 
 }
