@@ -83,7 +83,7 @@ public class MyFirstTest extends TestBase {
 
     @Test
     public void myThirdTest(){
-        app.getHelperBase().loginAdmin();
+        app.getAdminHelper().loginAdmin();
         app.getAdminHelper().openMenuItem("Countries");
         List<String> countries = app.getHelperBase().getTextFromListObjects(By.xpath("//tbody//td/a[not(@title)]"));
         assertTrue(app.getHelperBase().isAlphabetic(countries));
@@ -162,7 +162,7 @@ public class MyFirstTest extends TestBase {
 
     @Test
     public void testProductCreation(){
-        app.getHelperBase().loginAdmin();
+        app.getAdminHelper().loginAdmin();
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         Product product = new Product().withName("NewProduct_" + timestamp.getTime())
                 .withRegularPrice("500");
@@ -184,6 +184,14 @@ public class MyFirstTest extends TestBase {
         }
         app.getLiteCartHelper().openCart();
         app.getLiteCartHelper().deleteProductFromCart();
+    }
+
+    @Test
+    public void checkNewWindows(){
+        app.getAdminHelper().loginAdmin();
+        app.getAdminHelper().openMenuItem("Countries");
+        app.getAdminHelper().initAddCountry();
+        app.getAdminHelper().checkOpenedNewWindow();
     }
 
 }

@@ -21,8 +21,8 @@ public class ApplicationManager {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 5);
 
-        liteCartHelper = new LiteCartHelper(driver);
-        adminHelper = new AdminHelper(driver);
+        liteCartHelper = new LiteCartHelper(driver,wait);
+        adminHelper = new AdminHelper(driver,wait);
         helperBase = new HelperBase(driver,wait);
     }
 

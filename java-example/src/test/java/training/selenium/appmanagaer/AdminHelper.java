@@ -2,23 +2,33 @@ package training.selenium.appmanagaer;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import training.selenium.models.Product;
 
 import java.io.File;
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class AdminHelper extends HelperBase {
 
 
-    public AdminHelper(WebDriver driver) {
-        super(driver);
+    public AdminHelper(WebDriver driver, WebDriverWait wait) {
+        super(driver, wait);
 
 
+    }
+
+    public void loginAdmin(){
+        driver.navigate().to("http://localhost/litecart/admin/");
+        login("admin", "admin");
     }
 
     public void openMenuItem(String item) {
@@ -70,5 +80,43 @@ public class AdminHelper extends HelperBase {
     private void uploadImage(By locator, File image) {
         driver.findElement(locator)
                 .sendKeys(image.getAbsolutePath());
+    }
+
+    public void initAddCountry() {
+        driver.findElement(By.cssSelector("a[href*=edit_country]:not([href*=country_code])")).click();
+    }
+
+    public void checkOpenedNewWindow() {
+        List<WebElement> links = driver.findElements(By.xpath("//label/a[@target]"));
+        String mainWindow = driver.getWindowHandle();
+        Set<String> oldWindows =  driver.getWindowHandles();
+        for(WebElement link : links){
+            link.click();
+            String newWindow = wait.until(anyWindowOtherThan(oldWindows));
+            driver.switchTo().window(newWindow);
+            driver.close();
+            driver.switchTo().window(mainWindow);
+        }
+    }
+
+    private String getNewWindowHandler(Set<String> oldWindows, Set<String> newWindows) {
+        Set<String> openWindows = new HashSet<String>(oldWindows);
+        for(String window : newWindows){
+            if (openWindows.add(window)){
+                return window;
+            }
+        }
+        return "No new windows";
+    }
+
+    public ExpectedCondition<String> anyWindowOtherThan(Set<String> oldWindows) {
+        return new ExpectedCondition<String>() {
+            //@Override
+            public String apply(WebDriver wd) {
+                Set<String> handles = wd.getWindowHandles();
+                handles.removeAll(oldWindows);
+                return handles.size() > 0 ? handles.iterator().next() : null;
+            }
+        };
     }
 }

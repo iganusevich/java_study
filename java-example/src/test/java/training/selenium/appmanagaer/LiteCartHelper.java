@@ -17,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 
 public class LiteCartHelper extends HelperBase {
 
-    public LiteCartHelper(WebDriver driver) {
-        super(driver);
+    public LiteCartHelper(WebDriver driver, WebDriverWait wait) {
+        super(driver, wait);
     }
 
     public List<String> collectPoductInfo(By locator1, By locator2, By locator3, WebElement we){
@@ -140,7 +140,6 @@ public class LiteCartHelper extends HelperBase {
         String num_items = driver.findElement(By.cssSelector("span.quantity")).getText();
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until((driver)-> checkCartNumIncreased(num_items));
-        String num_items1 = driver.findElement(By.cssSelector("span.quantity")).getText();
     }
 
     private boolean checkCartNumIncreased(String num) {
@@ -153,7 +152,6 @@ public class LiteCartHelper extends HelperBase {
     }
 
     public void deleteProductFromCart()  {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
         while (isElementPresent(By.cssSelector("button[name=remove_cart_item]"))){
             WebElement table = driver.findElement(By.cssSelector("div#box-checkout-summary"));
             driver.findElement(By.cssSelector("button[name=remove_cart_item]")).click();

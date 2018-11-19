@@ -62,10 +62,7 @@ public class HelperBase {
         wait.until(titleIs("My Store"));
     }
 
-    public void loginAdmin(){
-        driver.navigate().to("http://localhost/litecart/admin/");
-        login("admin", "admin");
-    }
+
 
     public void openLiteCart(){
         openPage("http://localhost/litecart/");
