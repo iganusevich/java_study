@@ -12,13 +12,13 @@ import java.util.Objects;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class AdminHelper {
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class AdminHelper extends HelperBase {
 
-    public AdminHelper(WebDriver driver, WebDriverWait wait) {
-        this.driver = driver;
-        this.wait = wait;
+
+    public AdminHelper(WebDriver driver) {
+        super(driver);
+
+
     }
 
     public void openMenuItem(String item) {

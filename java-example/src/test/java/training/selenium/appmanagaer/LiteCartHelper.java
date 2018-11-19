@@ -1,10 +1,10 @@
 package training.selenium.appmanagaer;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.*;
 import training.selenium.models.MyColor;
 import training.selenium.models.Product;
 import training.selenium.models.User;
@@ -13,12 +13,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
 
-public class LiteCartHelper {
-    private WebDriver driver;
+public class LiteCartHelper extends HelperBase {
 
     public LiteCartHelper(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public List<String> collectPoductInfo(By locator1, By locator2, By locator3, WebElement we){
@@ -35,13 +35,17 @@ public class LiteCartHelper {
         return product;
     }
 
-    private WebElement getItemMainPage(int product_num, String tab) {
-        List<WebElement> camp_prod = driver.findElements(By.cssSelector("div#box-" + tab + "-products a.link"));
-        return camp_prod.get(product_num);
+    public WebElement getItemMainPage(int product_num, String tab) {
+        return getItemsMainPage(tab).get(product_num);
     }
 
     public String getItemNameMainPage(WebElement we){
         return we.findElement(By.cssSelector("div.name")).getText();
+    }
+
+    public List<WebElement> getItemsMainPage(String tab) {
+        driver.findElements(By.cssSelector("a[href*=" +tab+ "]"));
+        return driver.findElements(By.cssSelector("div#box-" + tab + "-products a.link"));
     }
 
     public Product getProductPopUp(int product_num, String tab){
@@ -125,4 +129,46 @@ public class LiteCartHelper {
         driver.findElement(By.cssSelector("input[name=password]")).sendKeys(user.getPassword());
         driver.findElement(By.cssSelector("button[name=login]")).click();
         }
+
+    public void addProductToCart(WebElement item) {
+        item.click();
+        if(isElementPresent(By.cssSelector("select[name='options[Size]']"))){
+            new Select(driver.findElement(By.cssSelector("select[name='options[Size]']"))).selectByValue("Medium");
+        }
+        driver.findElement(By.cssSelector("button[name=add_cart_product]")).click();
+        driver.findElement(By.cssSelector("div.featherlight-close-icon")).click();
+        String num_items = driver.findElement(By.cssSelector("span.quantity")).getText();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until((driver)-> checkCartNumIncreased(num_items));
+        String num_items1 = driver.findElement(By.cssSelector("span.quantity")).getText();
+    }
+
+    private boolean checkCartNumIncreased(String num) {
+        return Integer.parseInt(driver.findElement(By.cssSelector("span.quantity")).getText()) == Integer.parseInt(num)+1;
+    }
+
+
+    public void openCart() {
+        driver.findElement(By.cssSelector("a[href*=checkout]")).click();
+    }
+
+    public void deleteProductFromCart()  {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        while (isElementPresent(By.cssSelector("button[name=remove_cart_item]"))){
+            WebElement table = driver.findElement(By.cssSelector("div#box-checkout-summary"));
+            driver.findElement(By.cssSelector("button[name=remove_cart_item]")).click();
+            wait.until(ExpectedConditions.stalenessOf(table));
+        }
+    }
+
+
+
+    private String getSubtotalCheckout() {
+        return driver.findElement(By.xpath("//td[*='Subtotal:']/following-sibling::td[1]")).getText();
+    }
+
+
+    public void goToTab(String tab) {
+        driver.findElement(By.cssSelector("a[href*=" + tab + "]")).click();
+    }
 }
