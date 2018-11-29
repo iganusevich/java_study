@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="459e5583-be32-40d7-8400-ce611a2d87c2" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/sifma-tests.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/sifma-tests_main.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/sifma-tests_test.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../sifma-tests/src/test/java/appmanager/ApplicationManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../sifma-tests/src/test/java/tests/TestBase.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../sifma-tests/src/test/resources/local.properties" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc4528b8-928c-4f97-aaa2-aa145c3c3129.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/dc4528b8-928c-4f97-aaa2-aa145c3c3129.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/appmanagaer/ApplicationManager.class" afterPath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/appmanagaer/ApplicationManager.class" />
-      <change beforePath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/appmanagaer/LiteCartHelper.class" afterPath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/appmanagaer/LiteCartHelper.class" />
       <change beforePath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/tests/MyFirstTest.class" afterPath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/tests/MyFirstTest.class" />
+      <change beforePath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/tests/TestBase.class" afterPath="$PROJECT_DIR$/../java-example/out/test/classes/training/selenium/tests/TestBase.class" />
       <change beforePath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/AdminHelper.java" afterPath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/AdminHelper.java" />
       <change beforePath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/ApplicationManager.java" afterPath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/ApplicationManager.java" />
-      <change beforePath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/HelperBase.java" afterPath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/HelperBase.java" />
-      <change beforePath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/LiteCartHelper.java" afterPath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/LiteCartHelper.java" />
-      <change beforePath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/MyFirstTest.java" afterPath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/MyFirstTest.java" />
+      <change beforePath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/TestBase.java" afterPath="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/TestBase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -37,6 +45,9 @@
     <ignored path="$PROJECT_DIR$/../java-example/.gradle/" />
     <ignored path="$PROJECT_DIR$/../java-example/build/" />
     <ignored path="$PROJECT_DIR$/../java-example/out/" />
+    <ignored path="$PROJECT_DIR$/../sifma-tests/.gradle/" />
+    <ignored path="$PROJECT_DIR$/../sifma-tests/build/" />
+    <ignored path="$PROJECT_DIR$/../sifma-tests/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +68,17 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="sia2@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sia2@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="DB2INST1: schema" type="92ea39e5:Db2ImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sia2@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="DB2INST1: schema" type="92ea39e5:Db2ImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -123,6 +145,9 @@
     <projectState path="$PROJECT_DIR$/../rest-tests">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/../sifma-tests">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/../soap-tests">
       <ProjectState />
     </projectState>
@@ -141,11 +166,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyFirstTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyFirstTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/MyFirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="192" column="33" lean-forward="true" selection-start-line="192" selection-start-column="33" selection-end-line="192" selection-end-column="33" />
+            <state relative-caret-position="217">
+              <caret line="163" column="29" lean-forward="false" selection-start-line="163" selection-start-column="29" selection-end-line="163" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#checkCountrieZonesAlphabetical#0;class#MyFirstTest#0" expanded="false" />
@@ -155,120 +180,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/TestBase.java">
+      <file leaf-file-name="local.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../sifma-tests/src/test/resources/local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDataGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/generators/UserDataGenerator.java">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../sifma-tests/src/test/java/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="38" column="98" lean-forward="false" selection-start-line="38" selection-start-column="98" selection-end-line="38" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LiteCartHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/LiteCartHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2601">
-              <caret line="153" column="42" lean-forward="false" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#1326#1327#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
-                <element signature="e#1517#1518#0" expanded="true" />
-                <element signature="e#7050#7051#0" expanded="true" />
-                <element signature="e#7129#7130#0" expanded="true" />
-                <element signature="e#7714#7715#0" expanded="true" />
-                <element signature="e#7796#7797#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/function/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/ApplicationManager.java">
+        <entry file="file://$PROJECT_DIR$/../sifma-tests/src/test/java/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/models/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-              <folding>
-                <element signature="e#2418#2419#0" expanded="true" />
-                <element signature="e#2453#2454#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/HelperBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#1879#1880#0" expanded="true" />
-                <element signature="e#1933#1934#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/AdminHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="85" column="102" lean-forward="true" selection-start-line="85" selection-start-column="102" selection-end-line="85" selection-end-column="102" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#893#894#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#4388#4396#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -302,6 +239,7 @@
         <entry key="$PROJECT_DIR$/../java-example" value="C:\Users\ira\.gradle\wrapper\dists\gradle-4.0-bin\3p92xsbhik5vmig8i90n16yxc\gradle-4.0" />
         <entry key="$PROJECT_DIR$/../mantis-tests" value="C:\Users\ira\.gradle\wrapper\dists\gradle-4.6-bin\4jp4stjndanmxuerzfseyb6wo\gradle-4.6" />
         <entry key="$PROJECT_DIR$/../rest-tests" value="C:\Users\ira\.gradle\wrapper\dists\gradle-4.6-bin\4jp4stjndanmxuerzfseyb6wo\gradle-4.6" />
+        <entry key="$PROJECT_DIR$/../sifma-tests" value="C:\Users\ira\.gradle\wrapper\dists\gradle-4.6-bin\4jp4stjndanmxuerzfseyb6wo\gradle-4.6" />
         <entry key="$PROJECT_DIR$/../soap-tests" value="C:\Users\ira\.gradle\wrapper\dists\gradle-4.6-bin\4jp4stjndanmxuerzfseyb6wo\gradle-4.6" />
       </map>
     </option>
@@ -313,6 +251,7 @@
         <entry key="$PROJECT_DIR$/../java-example" value="4.0" />
         <entry key="$PROJECT_DIR$/../mantis-tests" value="4.6" />
         <entry key="$PROJECT_DIR$/../rest-tests" value="4.6" />
+        <entry key="$PROJECT_DIR$/../sifma-tests" value="4.6" />
         <entry key="$PROJECT_DIR$/../soap-tests" value="4.6" />
       </map>
     </option>
@@ -410,6 +349,22 @@
               <ExternalProjectPojo>
                 <option name="name" value="sandbox" />
                 <option name="path" value="$PROJECT_DIR$/../sandbox" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="sifma-tests" />
+              <option name="path" value="$PROJECT_DIR$/../sifma-tests" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="sifma-tests" />
+                <option name="path" value="$PROJECT_DIR$/../sifma-tests" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -1292,6 +1247,147 @@
             </list>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../sifma-tests">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'sifma-tests'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'sifma-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'sifma-tests'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'sifma-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'sifma-tests'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'sifma-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'sifma-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'sifma-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'sifma-tests'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/../sifma-tests" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../soap-tests">
           <value>
             <list>
@@ -1453,13 +1549,15 @@
         <entry key="$PROJECT_DIR$/../Zibby/build.gradle" value="2097920530" />
         <entry key="$PROJECT_DIR$" value="3062387683367" />
         <entry key="$PROJECT_DIR$/build.gradle" value="693952278" />
-        <entry key="$PROJECT_DIR$/../java-example" value="4622466440973" />
+        <entry key="$PROJECT_DIR$/../java-example" value="4623773394122" />
         <entry key="$PROJECT_DIR$/../java-example/build.gradle" value="2404790374" />
         <entry key="$PROJECT_DIR$/../mantis-tests" value="3050885788046" />
         <entry key="$PROJECT_DIR$/../mantis-tests/build.gradle" value="4265990957" />
         <entry key="$PROJECT_DIR$/../rest-tests" value="3050975444546" />
         <entry key="$PROJECT_DIR$/../rest-tests/build.gradle" value="2060177089" />
         <entry key="$PROJECT_DIR$/../sandbox/build.gradle" value="1744532254" />
+        <entry key="$PROJECT_DIR$/../sifma-tests" value="3065075344911" />
+        <entry key="$PROJECT_DIR$/../sifma-tests/build.gradle" value="3327735782" />
         <entry key="$PROJECT_DIR$/../soap-tests" value="3050883911391" />
         <entry key="$PROJECT_DIR$/../soap-tests/build.gradle" value="2503912485" />
       </map>
@@ -2054,6 +2152,105 @@
             </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../sifma-tests">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$/../sifma-tests">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/../sifma-tests" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="sifma-tests" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/ant-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/ant-launcher-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-base-services-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-base-services-groovy-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-build-cache-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-build-option-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-cli-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-core-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-core-api-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-docs-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-installation-beacon-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-jvm-services-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-kotlin-dsl-0.15.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-kotlin-dsl-tooling-builders-0.15.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-kotlin-dsl-tooling-models-0.15.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-launcher-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-logging-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-messaging-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-model-core-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-model-groovy-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-persistent-cache-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-process-services-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-resources-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-runtime-api-info-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-tooling-api-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/gradle-wrapper-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-announce-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-antlr-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-build-cache-http-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-build-comparison-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-build-init-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-code-quality-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-composite-builds-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-dependency-management-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-diagnostics-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-ear-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-ide-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-ide-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-ide-play-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-ivy-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-jacoco-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-javascript-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-language-groovy-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-language-java-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-language-jvm-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-language-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-language-scala-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-maven-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-osgi-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-platform-base-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-platform-jvm-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-platform-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-platform-play-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-plugin-development-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-plugin-use-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-plugins-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-publish-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-reporting-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-resources-gcs-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-resources-http-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-resources-s3-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-resources-sftp-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-scala-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-signing-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-test-kit-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-testing-base-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-testing-junit-platform-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-testing-jvm-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-testing-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-tooling-api-builders-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-version-control-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/gradle-workers-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/../sifma-tests/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/../sifma-tests/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../soap-tests">
           <value>
             <ExternalProjectBuildClasspathPojo>
@@ -2168,9 +2365,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/tests/PasswordChangeTest.java" />
-        <option value="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/models/Issue.java" />
         <option value="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/../mantis-tests/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/../mantis-tests/src/test/java/mantis/appmanager/SoapHelper.java" />
@@ -2211,14 +2405,17 @@
         <option value="$PROJECT_DIR$/../java-example/build.gradle" />
         <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/models/User.java" />
         <option value="$PROJECT_DIR$/../java-example/src/test/resources/testng.xml" />
-        <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/generators/UserDataGenerator.java" />
         <option value="$PROJECT_DIR$/../java-example/src/test/resources/users.json" />
         <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/LiteCartHelper.java" />
-        <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/HelperBase.java" />
         <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/MyFirstTest.java" />
         <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/AdminHelper.java" />
+        <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/../sifma-tests/build.gradle" />
+        <option value="$PROJECT_DIR$/../sifma-tests/src/test/java/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/../sifma-tests/src/test/java/tests/TestBase.java" />
       </list>
     </option>
   </component>
@@ -2249,81 +2446,128 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
+              <item name="appmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sifma-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sifma-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sifma-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sifma-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sifma-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sifma-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="generators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="soap-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soap-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="soap-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zibby" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zibby" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zibby" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2335,7 +2579,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sifma-tests/build.gradle" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -2344,29 +2588,31 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DB2 (LUW)&#10;DB2 (JTOpen)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\iganusevich\My\GitHub\java_study\Zibby\src\test\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Users\iganusevich\My\GitHub\java_study\Zibby\src\main\resources" />
-      <recent name="D:\Users\iganusevich\My\GitHub\java_study\mantis-tests\src\test\resources" />
-      <recent name="D:\Users\iganusevich\My\GitHub\java_study\SMG\src\test\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="zibby.appmanager" />
-      <recent name="zibby.tests" />
-      <recent name="mantis.tests" />
-      <recent name="mantis.appmanager" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="training.selenium.appmanagaer" />
       <recent name="training.selenium.tests" />
       <recent name="training.selenium" />
       <recent name="rest" />
       <recent name="mantis.appmanager" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\iganusevich\My\GitHub\java_study\sifma-tests\src\test\resources" />
+      <recent name="D:\Users\iganusevich\My\GitHub\java_study\Zibby\src\main\resources" />
+      <recent name="D:\Users\iganusevich\My\GitHub\java_study\mantis-tests\src\test\resources" />
+      <recent name="D:\Users\iganusevich\My\GitHub\java_study\SMG\src\test\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="appmanager" />
+      <recent name="tests" />
+      <recent name="zibby.appmanager" />
+      <recent name="zibby.tests" />
+      <recent name="mantis.tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\iganusevich\My\GitHub\java_study\Zibby\src\test\resources" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -2555,7 +2801,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MyFirstTest.checkNewWindows">
+  <component name="RunManager" selected="TestNG.MyFirstTest.testProductCreation">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="WIDTH" value="400" />
@@ -2841,9 +3087,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.MyFirstTest.checkNewWindows" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.MyFirstTest.addProductToCart" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.MyFirstTest.testProductCreation" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.MyFirstTest.testProductCreation" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.MyFirstTest.checkNewWindows" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.MyFirstTest.addProductToCart" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.MyFirstTest.myFourthTest" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.MyFirstTest.registration" />
       </list>
@@ -2884,44 +3130,45 @@
       <workItem from="1539081700676" duration="14245000" />
       <workItem from="1539250013511" duration="64139000" />
       <workItem from="1541588941936" duration="46101000" />
-      <workItem from="1542194437841" duration="45591000" />
+      <workItem from="1542194437841" duration="51138000" />
+      <workItem from="1542725298111" duration="8416000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyFirstTest_addProductToCart - 2018.11.19 at 16h 47m 51s.xml">
-      <configuration name="MyFirstTest.addProductToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest_addProductToCart - 2018.11.19 at 16h 49m 40s.xml">
-      <configuration name="MyFirstTest.addProductToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest_addProductToCart - 2018.11.19 at 16h 52m 04s.xml">
-      <configuration name="MyFirstTest.addProductToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest_addProductToCart - 2018.11.19 at 16h 52m 53s.xml">
-      <configuration name="MyFirstTest.addProductToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest_addProductToCart - 2018.11.19 at 16h 59m 55s.xml">
-      <configuration name="MyFirstTest.addProductToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest_addProductToCart - 2018.11.19 at 17h 03m 28s.xml">
-      <configuration name="MyFirstTest.addProductToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest_addProductToCart - 2018.11.19 at 18h 00m 31s.xml">
-      <configuration name="MyFirstTest.addProductToCart" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.19 at 19h 06m 05s.xml">
+    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.20 at 15h 07m 33s.xml">
       <configuration name="MyFirstTest.checkNewWindows" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.19 at 19h 06m 41s.xml">
+    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.20 at 15h 09m 21s.xml">
       <configuration name="MyFirstTest.checkNewWindows" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.19 at 19h 07m 09s.xml">
+    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.20 at 15h 12m 32s.xml">
       <configuration name="MyFirstTest.checkNewWindows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.20 at 15h 28m 01s.xml">
+      <configuration name="MyFirstTest.checkNewWindows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.20 at 15h 43m 28s.xml">
+      <configuration name="MyFirstTest.checkNewWindows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.20 at 15h 55m 30s.xml">
+      <configuration name="MyFirstTest.checkNewWindows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTest_checkNewWindows - 2018.11.20 at 15h 57m 57s.xml">
+      <configuration name="MyFirstTest.checkNewWindows" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTest_testProductCreation - 2018.11.29 at 16h 17m 44s.xml">
+      <configuration name="MyFirstTest.testProductCreation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTest_testProductCreation - 2018.11.29 at 16h 21m 20s.xml">
+      <configuration name="MyFirstTest.testProductCreation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MyFirstTest_testProductCreation - 2018.11.29 at 16h 22m 10s.xml">
+      <configuration name="MyFirstTest.testProductCreation" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="489502000" />
+    <option name="totallyTimeSpent" value="503465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2945,16 +3192,16 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22890295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22890295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.249375" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2658228" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3003,7 +3250,7 @@
           <option name="timeStamp" value="147" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="239" />
+      <option name="time" value="248" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3022,65 +3269,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/fe402493/dc4528b8-928c-4f97-aaa2-aa145c3c3129/DB2INST1.ACCOUNTTBL">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" text="SISACCOUNTID = '199-0BRB4'">
-            <filter text="SISACCOUNTID = '199-0BRB4'" />
-            <filter text="SISACCOUNTID = '173-0U8L0'" />
-            <filter text="SISACCOUNTID = '109-0TG9S'" />
-            <filter text="SISACCOUNTID = '109-0TG9P'" />
-            <filter text="SISACCOUNTID = '144-0UFWC'" />
-            <filter text="SISACCOUNTID = '199-0UG11'" />
-          </filtering>
-          <column-attributes>
-            <column name="RID(t)" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Zibby/src/test/java/zibby/tests/PreApprovalTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="77" lean-forward="false" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Zibby/src/test/java/zibby/appmanager/CustomerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-firefox-driver/3.14.0/93de6f682174eb83ff790802a40366c4e3abd12/selenium-firefox-driver-3.14.0-sources.jar!/org/openqa/selenium/firefox/FirefoxDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="114" column="23" lean-forward="false" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.14.0/8c0af6fdccdc89a4394de7e3a8817ed2d6e41d7d/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/WebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="110" column="13" lean-forward="false" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.11.0/27548ec14b525fcf3b6c2ac01c8d1ce11564ebb2/selenium-remote-driver-3.11.0-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -3106,7 +3294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3114,7 +3301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3158,13 +3344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/fe402493/dc4528b8-928c-4f97-aaa2-aa145c3c3129/DB2INST1.SMG_CORNER_RECORDS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/addressbook/tests/ContactDeletionTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3176,7 +3355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3224,7 +3402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="119" column="16" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3249,7 +3426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3265,7 +3441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="59" column="5" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3289,9 +3464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="53" column="25" lean-forward="true" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3330,7 +3502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="253" column="52" lean-forward="false" selection-start-line="253" selection-start-column="52" selection-end-line="253" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3338,7 +3509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="543" column="6" lean-forward="false" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3354,7 +3524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3362,7 +3531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3370,22 +3538,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/generators/UserDataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="38" column="98" lean-forward="false" selection-start-line="38" selection-start-column="98" selection-end-line="38" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/models/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding>
             <element signature="e#2418#2419#0" expanded="true" />
             <element signature="e#2453#2454#0" expanded="true" />
@@ -3397,21 +3556,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/LiteCartHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2601">
+        <state relative-caret-position="2244">
           <caret line="153" column="42" lean-forward="false" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3429,26 +3579,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/ApplicationManager.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/HashSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        <state relative-caret-position="234">
+          <caret line="218" column="19" lean-forward="false" selection-start-line="218" selection-start-column="19" selection-end-line="218" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="171" lean-forward="false" selection-start-line="11" selection-start-column="171" selection-end-line="11" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/AdminHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="94" column="74" lean-forward="false" selection-start-line="94" selection-start-column="74" selection-end-line="94" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fe402493/dc4528b8-928c-4f97-aaa2-aa145c3c3129/DB2INST1.SMG_CORNER_RECORDS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1941#1942#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+            <element signature="e#2049#2050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/generators/UserDataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="38" column="98" lean-forward="false" selection-start-line="38" selection-start-column="98" selection-end-line="38" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="569">
+          <caret line="59" column="67" lean-forward="false" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
@@ -3463,39 +3675,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/HashSet.java">
+    <entry file="file://$PROJECT_DIR$/../sifma-tests/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="218" column="19" lean-forward="false" selection-start-line="218" selection-start-column="19" selection-end-line="218" selection-end-column="19" />
-          <folding>
-            <element signature="e#8064#8065#0" expanded="true" />
-            <element signature="e#8112#8113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/appmanagaer/AdminHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="85" column="102" lean-forward="true" selection-start-line="85" selection-start-column="102" selection-end-line="85" selection-end-column="102" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#4388#4396#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../java-example/src/test/java/training/selenium/tests/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="192" column="33" lean-forward="true" selection-start-line="192" selection-start-column="33" selection-end-line="192" selection-end-column="33" />
+        <state relative-caret-position="217">
+          <caret line="163" column="29" lean-forward="false" selection-start-line="163" selection-start-column="29" selection-end-line="163" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#checkCountrieZonesAlphabetical#0;class#MyFirstTest#0" expanded="false" />
             <element signature="method#checkNamesPricesEqual#0;class#MyFirstTest#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sifma-tests/src/test/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sifma-tests/src/test/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sifma-tests/src/test/java/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3551,7 +3771,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>java-example_main|java-example</last-edited>
+          <last-edited>sifma-tests_test|sifma-tests</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

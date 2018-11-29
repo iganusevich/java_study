@@ -20,6 +20,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox_main.iml" group="sandbox" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sandbox_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sandbox_test.iml" group="sandbox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sifma-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/sifma-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sifma-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sifma-tests_main.iml" group="sifma-tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sifma-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sifma-tests_test.iml" group="sifma-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/soap-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/soap-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/soap-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/soap-tests_main.iml" group="soap-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/soap-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/soap-tests_test.iml" group="soap-tests" />

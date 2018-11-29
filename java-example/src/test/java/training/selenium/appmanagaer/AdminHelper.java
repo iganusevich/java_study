@@ -111,7 +111,7 @@ public class AdminHelper extends HelperBase {
 
     public ExpectedCondition<String> anyWindowOtherThan(Set<String> oldWindows) {
         return new ExpectedCondition<String>() {
-            //@Override
+            @Override
             public String apply(WebDriver wd) {
                 Set<String> handles = wd.getWindowHandles();
                 handles.removeAll(oldWindows);
