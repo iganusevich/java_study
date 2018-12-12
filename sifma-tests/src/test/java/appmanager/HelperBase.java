@@ -1,14 +1,14 @@
 package appmanager;
 
-import models.Advisor;
-import models.Class;
-import models.Team;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -74,6 +74,20 @@ public class HelperBase {
     public void hoverOverElement(WebElement item){
         Actions builder = new Actions(wd);
         builder.moveToElement(item).perform();
+    }
+
+    public List<String> getNewWindows(List<String> oldWindows) {
+        List<String> newWindows = new ArrayList<>(wd.getWindowHandles());
+        newWindows.removeAll(oldWindows);
+        return newWindows;
+    }
+
+    public void switchToNewWindow(String xpath, String specification) {
+        List<String> oldWindows = new ArrayList<>(wd.getWindowHandles());
+        wd.findElement(By.xpath(String.format(xpath,specification ))).click();
+        wait.until(ExpectedConditions.numberOfWindowsToBe(oldWindows.size() + 1));
+        List<String> new_windows = getNewWindows(oldWindows);
+        wd.switchTo().window(new_windows.get(0));
     }
 
 }

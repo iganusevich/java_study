@@ -9,6 +9,7 @@ import models.Trade;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -44,8 +45,8 @@ public class SmokeTests extends TestBase {
     @Test
     public void addClass(){
         Class new_class = new Class().withName("Name"+ System.currentTimeMillis()).withGrade("Middle School")
-                .withNum_students("20").withNum_teams("5");
-        Advisor advisor = new Advisor().withId("798519").withLast_name("Kramer");
+                .withNum_students("20").withNum_teams_requested("5");
+        Advisor advisor = new Advisor().withId(798519).withLast_name("Kramer");
         app.getCoordinatorsHelper().loginAsCoordinator("SIA", "wak46");
         app.getCoordinatorsHelper().goToSubMenu("Admin","Advisors");
         app.getCoordinatorsHelper().searchForAdvisor(advisor);
@@ -55,12 +56,12 @@ public class SmokeTests extends TestBase {
         app.getClassHelper().addClass(new_class, advisor);
         app.getCoordinatorsHelper().returnToAdvSearch();
         //Assert.assertEquals(advisor.getNum_classes(), app.getCoordinatorsHelper().getClassesNum(advisor));
-       //Assert.assertEquals(advisor.getNum_teams(), app.getCoordinatorsHelper().getTeamsNum(advisor));
+       //Assert.assertEquals(advisor.getNum_teams_requested(), app.getCoordinatorsHelper().getTeamsNum(advisor));
     }
 
     @Test
     public void deleteClass(){
-        Advisor advisor = new Advisor().withId("798519").withLast_name("Kramer");
+        Advisor advisor = new Advisor().withId(798519).withLast_name("Kramer");
         app.getCoordinatorsHelper().loginAsCoordinator("SIA", "wak46");
         app.getCoordinatorsHelper().goToSubMenu("Admin","Advisors");
         app.getCoordinatorsHelper().searchForAdvisor(advisor);
@@ -85,13 +86,26 @@ public class SmokeTests extends TestBase {
 
     @Test
     public void advisorLogsInAsPlayer(){
+        SoftAssert asert=new SoftAssert();
         Advisor advisor = new Advisor().withLogin("SIA_99_T798519").withPassword("BQXA4927"); // Prod: SIA_99_T798519 / BQXA4927
         app.getAdvisorHelper().loginAsAdvisor(advisor);
         app.getAdvisorHelper().closeNewsPopUp();
-        app.getAdvisorHelper().viewRankings();
-
-
-
-        
+        String mainWindow = app.getAdvisorHelper().getCurrentWindow();
+        String viewRankingsWindow = app.getAdvisorHelper().viewRankings();
+        app.getAdvisorHelper().getAdvisorClasses(advisor);
+        app.getAdvisorHelper().checkClassPopUp(advisor, asert);
+        //app.getAdvisorHelper().checkLogInAsTeam(advisor, asert);
+        asert.assertAll();
     }
+
+    @Test
+    public void test(){
+        Class old_class = new Class().withId(12345);
+        Class new_class = new Class(old_class);
+        new_class.withId(5);
+
+        int i = 0;
+
+    }
+
 }

@@ -18,10 +18,10 @@ public class ClassHelper extends HelperBase {
         wd.findElement(By.cssSelector("div[id='formClass:j_idt145'] div[class*=ui-selectonemenu-trigger]")).click();
         wd.findElement(By.cssSelector("li[data-label='Middle School']")).click();
         wd.findElement(By.cssSelector("input[id='formClass:noOfParticipants']")).sendKeys(new_class.getNum_students());
-        wd.findElement(By.cssSelector("input[id='formClass:noOfTeams']")).sendKeys(new_class.getNum_teams());
+        wd.findElement(By.cssSelector("input[id='formClass:noOfTeams']")).sendKeys(new_class.getNum_teams_requested());
         wd.findElement(By.xpath("//span[.='Add Class'][@class='ui-button-text ui-c']/..")).click();
         advisor.incNumClassesBy(1);
-        advisor.incNumTeamsBy(Integer.parseInt(new_class.getNum_teams()));
+        advisor.incNumTeamsBy(Integer.parseInt(new_class.getNum_teams_requested()));
     }
 
     public void deleteLastClass(Advisor advisor) {
@@ -40,7 +40,7 @@ public class ClassHelper extends HelperBase {
         advisor.decNumClassesBy(1);
         advisor.decNumTeamsBy(Integer.parseInt(extractRegEx(": ([0-9]*)",text)));
 //        advisor.withNum_classes(advisor.getNum_classes() - 1);
-//        advisor.withNum_teams(advisor.getNum_teams() - Integer.parseInt(extractRegEx(": ([0-9]*)",text)));
+//        advisor.withNum_teams(advisor.getNum_teams_requested() - Integer.parseInt(extractRegEx(": ([0-9]*)",text)));
     }
 
     private int getLastClassId() {

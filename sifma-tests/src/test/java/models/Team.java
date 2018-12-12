@@ -7,9 +7,17 @@ public class Team {
     int advisor_id;
     int clas_id;
 
+    public Team(Team team) {
+        this.login = team.login;
+        this.password = team.password;
+        this.id = team.id;
+        this.advisor_id = team.advisor_id;
+        this.clas_id = team.clas_id;
+    }
 
+    public Team() {
 
-
+    }
 
     public String getLogin() {
         return login;

@@ -1,15 +1,18 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Advisor {
-    String id;
+    int id;
     int num_classes;
     int num_teams;
     String last_name;
     String login;
     String password;
-    List<Class> classes;
+    private List<Class> classes = new ArrayList<Class>();
 
      public void incNumTeamsBy(int num){
          this.num_teams += num;
@@ -30,6 +33,11 @@ public class Advisor {
 
 
 
+
+
+
+
+
     public String getLogin() {
         return login;
     }
@@ -40,15 +48,23 @@ public class Advisor {
     }
 
     public List<Class> getClasses() {
-
-        return classes;
+        return Collections.unmodifiableList(classes);
     }
 
-    public Advisor withClasses(List<Class> classes) {
-        this.classes = classes;
-        return this;
-
+    public Advisor addClass(Class new_class) {
+         Class add_class = new Class(new_class);
+         add_class.withId(this.id);
+         this.classes.add(new_class);
+         return this;
     }
+
+    public Advisor addClasses(Collection<Class> new_classes) {
+         for(Class new_class : new_classes){
+             this.addClass(new_class);
+         }
+         return this;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -67,11 +83,11 @@ public class Advisor {
         return this;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public Advisor withId(String id) {
+    public Advisor withId(int id) {
         this.id = id;
         return this;
     }
