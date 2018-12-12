@@ -38,12 +38,15 @@ public class SmokeTests extends TestBase {
 
     @Test
     public void checkCoordinatorsPages(){
+        SoftAssert asert=new SoftAssert();
         app.getCoordinatorsHelper().loginAsCoordinator("SIA", "wak46");
         app.getCoordinatorsHelper().checkPages();
+        asert.assertAll();
     }
 
     @Test
     public void addClass(){
+        SoftAssert asert=new SoftAssert();
         Class new_class = new Class().withName("Name"+ System.currentTimeMillis()).withGrade("Middle School")
                 .withNum_students("20").withNum_teams_requested("5");
         Advisor advisor = new Advisor().withId(798519).withLast_name("Kramer");
@@ -57,10 +60,12 @@ public class SmokeTests extends TestBase {
         app.getCoordinatorsHelper().returnToAdvSearch();
         //Assert.assertEquals(advisor.getNum_classes(), app.getCoordinatorsHelper().getClassesNum(advisor));
        //Assert.assertEquals(advisor.getNum_teams_requested(), app.getCoordinatorsHelper().getTeamsNum(advisor));
+        asert.assertAll();
     }
 
     @Test
     public void deleteClass(){
+        SoftAssert asert=new SoftAssert();
         Advisor advisor = new Advisor().withId(798519).withLast_name("Kramer");
         app.getCoordinatorsHelper().loginAsCoordinator("SIA", "wak46");
         app.getCoordinatorsHelper().goToSubMenu("Admin","Advisors");
@@ -70,18 +75,21 @@ public class SmokeTests extends TestBase {
         app.getCoordinatorsHelper().openClassesForAdvisor(advisor);
         app.getClassHelper().deleteLastClass(advisor);
         app.getCoordinatorsHelper().returnToAdvSearch();
-        Assert.assertEquals(advisor.getNum_classes(), app.getCoordinatorsHelper().getClassesNum(advisor));
-        Assert.assertEquals(advisor.getNum_teams(), app.getCoordinatorsHelper().getTeamsNum(advisor));
+        asert.assertEquals(advisor.getNum_classes(), app.getCoordinatorsHelper().getClassesNum(advisor));
+        asert.assertEquals(advisor.getNum_teams(), app.getCoordinatorsHelper().getTeamsNum(advisor));
+        asert.assertAll();
     }
 
     @Test(dataProvider = "tradesFromJSON")
     public void makeTrades(Trade trade){
+        SoftAssert asert=new SoftAssert();
         Team team = new Team().withLogin("SIA_99_A629").withPassword("aqAwaEMl");//QA: SIA_99_A676/ 4AK4G8RD ; Prod: SIA_99_A629/ aqAwaEMl
         app.getGamesHelper().loginAsTeam(team);
         app.getGamesHelper().goToSubMenu("TRADE", "Enter a Trade");
         app.getGamesHelper().makeTrade(trade);
         app.getGamesHelper().confirmTrade(team, trade);
-        Assert.assertTrue(trade.isConfirmed());
+        asert.assertTrue(trade.isConfirmed());
+        asert.assertAll();
     }
 
     @Test
