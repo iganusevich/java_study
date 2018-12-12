@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.DeleteClassTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-12-12T16:43:11" hostname="UROBOROS" time="4.594">
+  <properties/>
+  <testcase name="deleteClass" classname="tests.DeleteClassTests" time="4.594"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
