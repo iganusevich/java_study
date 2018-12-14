@@ -18,6 +18,14 @@ public class Trade {
         return confirmed;
     }
 
+
+    @Override
+    public String toString() {
+        return "Trade{" +
+                "symbol='" + symbol + '\'' +
+                '}';
+    }
+
     public Trade withConfirmed(boolean confirmed) {
         this.confirmed = confirmed;
         return this;
