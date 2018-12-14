@@ -2,11 +2,8 @@ package tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import models.Advisor;
-import models.Class;
 import models.Team;
 import models.Trade;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -56,7 +53,7 @@ public class SmokeTests extends TestBase {
         app.getGamesHelper().goToSubMenu("TRADE", "Enter a Trade");
         app.getGamesHelper().makeTrade(trade);
         app.getGamesHelper().confirmTrade(team, trade);
-        asert.assertTrue(trade.isConfirmed());
+        app.getGamesHelper().checkTradeConfirmed(trade, asert);
         asert.assertAll();
     }
 

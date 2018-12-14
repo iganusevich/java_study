@@ -8,6 +8,7 @@ public class Trade {
     String amount;
     String price;
     String id;
+    String msg;
     boolean confirmed;
 
 
@@ -19,11 +20,21 @@ public class Trade {
     }
 
 
+
     @Override
     public String toString() {
         return "Trade{" +
                 "symbol='" + symbol + '\'' +
                 '}';
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public Trade withMsg(String msg) {
+        this.msg = msg;
+        return this;
     }
 
     public Trade withConfirmed(boolean confirmed) {

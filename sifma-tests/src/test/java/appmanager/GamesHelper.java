@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
 import java.util.Arrays;
 
@@ -146,7 +147,14 @@ public class GamesHelper extends HelperBase {
             trade.withConfirmed(true);
             trade.withId(extractRegEx("Confirmed: ([A-Z]{3}-[0-9]*)",response));
         } else {
+            trade.withMsg(response);
             trade.withConfirmed(false);
+        }
+    }
+
+    public void checkTradeConfirmed(Trade trade, SoftAssert asert) {
+        if(!trade.getMsg().contains("system is unavailable during the following times")) {
+            asert.assertTrue(trade.isConfirmed());
         }
     }
 }
