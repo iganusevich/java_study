@@ -145,6 +145,7 @@ public class GamesHelper extends HelperBase {
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector("div#divFinalTradeResponse"))));
         String response = wd.findElement(By.cssSelector("div#divFinalTradeResponse")).getText();
         if(response.contains("Confirmed")){
+            trade.withMsg(response);
             trade.withConfirmed(true);
             trade.withId(extractRegEx("Confirmed: ([A-Z]{3}-[0-9]*)",response));
         } else {
