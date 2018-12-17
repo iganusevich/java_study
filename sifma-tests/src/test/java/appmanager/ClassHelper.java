@@ -7,11 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.yandex.qatools.allure.annotations.Step;
 
 public class ClassHelper extends HelperBase {
     public ClassHelper(WebDriver wd, WebDriverWait wait) {
         super(wd,wait);
     }
+
 
     public void addClass(Class new_class, Advisor advisor){
         wd.findElement(By.cssSelector("input[id*=class_name] ")).sendKeys(new_class.getName());
