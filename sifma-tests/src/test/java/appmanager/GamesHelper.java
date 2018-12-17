@@ -153,7 +153,11 @@ public class GamesHelper extends HelperBase {
     }
 
     public void checkTradeConfirmed(Trade trade, SoftAssert asert) {
-        if(!trade.getMsg().contains("system is unavailable during the following times")) {
+        if(trade.getMsg().contains("system is unavailable during the following times")) {
+            System.out.println("System is unavailable now");
+        } else if(trade.getMsg().contains("5 minutes")) {
+            System.out.println("Same symbol in 5 minutes");
+        }  else {
             asert.assertTrue(trade.isConfirmed());
         }
     }

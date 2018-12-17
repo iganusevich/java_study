@@ -1,9 +1,18 @@
 [
   {
-    "symbol": "MAAAX",
-    "eqtype": "MutualFund",
+    "symbol": "AA",
+    "eqtype": "Stock",
     "order": "Buy",
-    "type": "",
+    "type": "Market",
+    "amount": "10",
+    "price": "",
+    "id": ""
+  },
+  {
+    "symbol": "AN",
+    "eqtype": "Stock",
+    "order": "Buy",
+    "type": "Market",
     "amount": "10",
     "price": "",
     "id": ""
