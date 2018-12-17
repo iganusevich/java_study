@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
+import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.Arrays;
 
@@ -138,6 +139,7 @@ public class GamesHelper extends HelperBase {
         wd.findElement(By.cssSelector(String.format("input#rb%s",order))).click();
     }
 
+    @Step ("Response after confirmation - {response}")
     public void confirmTrade(Team team, Trade trade) {
         wd.findElement(By.cssSelector("input#TradePassword")).sendKeys(team.getPassword());
         wd.findElement(By.cssSelector("input#btnConfirmTrade")).click();
