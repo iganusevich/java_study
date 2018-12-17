@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1545048379402" stop="1545048406117">
+    <name>Default Suite</name>
+    <test-cases>
+        <test-case start="1545048379465" stop="1545048401633" status="passed">
+            <name>makeTrades[Trade{symbol='AA'}]</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1545048401691" stop="1545048406113" status="passed">
+            <name>makeTrades[Trade{symbol='AN'}]</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>
