@@ -13,7 +13,7 @@ public class Class {
     String num_students;
     String num_teams_requested;
     String num_teams_assigned;
-    List<Team> teams = new ArrayList<Team>();
+    TeamSet teams = new TeamSet();
 
     public Class(Class old_class) {
         this.id = old_class.id;
@@ -38,8 +38,8 @@ public class Class {
         return this;
     }
 
-    public List<Team> getTeams() {
-        return Collections.unmodifiableList(teams);
+    public TeamSet getTeams() {
+        return new TeamSet(this.teams);
     }
 
     public Class addTeam(Team new_team){

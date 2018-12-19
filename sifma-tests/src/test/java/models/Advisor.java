@@ -12,7 +12,7 @@ public class Advisor {
     String last_name;
     String login;
     String password;
-    private List<Class> classes = new ArrayList<Class>();
+    private ClassSet classes = new ClassSet();
 
      public void incNumTeamsBy(int num){
          this.num_teams += num;
@@ -47,23 +47,34 @@ public class Advisor {
         return this;
     }
 
-    public List<Class> getClasses() {
-        return Collections.unmodifiableList(classes);
+    public ClassSet getClasses() {
+        return new ClassSet(classes);
     }
 
-    public Advisor addClass(Class new_class) {
-         Class add_class = new Class(new_class);
-         add_class.withId(this.id);
-         this.classes.add(new_class);
-         return this;
-    }
-
-    public Advisor addClasses(Collection<Class> new_classes) {
-         for(Class new_class : new_classes){
-             this.addClass(new_class);
+    public Advisor withClasses(ClassSet classes){
+         for(Object new_class : classes) {
+             this.withClass((Class) new_class);
          }
          return this;
     }
+
+    public Advisor withClass(Class new_class){
+         Class add_class = new Class(new_class);
+         this.classes.add(add_class.withId(this.id));
+         return this;
+    }
+
+//    public Advisor addClass(Class new_class) {
+//
+//         return this;
+//    }
+//
+//    public Advisor addClasses(Collection<Class> new_classes) {
+//         for(Class new_class : new_classes){
+//             this.addClass(new_class);
+//         }
+//         return this;
+//    }
 
     public String getPassword() {
         return password;

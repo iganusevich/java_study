@@ -2,6 +2,7 @@ package appmanager;
 
 import models.Advisor;
 import models.Class;
+import models.ClassSet;
 import models.Team;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -61,16 +62,16 @@ public class AdvisorHelper extends HelperBase {
     public void checkClassPopUp(Advisor advisor, SoftAssert asert) {
         String viewRankings = wd.getWindowHandle();
         List<String> oldWindows = new ArrayList<>(wd.getWindowHandles());
-        for(Class some_class : advisor.getClasses()){
-            wd.findElement(By.xpath(String.format("//a[.='%s']", some_class.getName()))).click();
+        for(Object some_class : advisor.getClasses()){
+            wd.findElement(By.xpath(String.format("//a[.='%s']", ((Class) some_class).getName()))).click();
             List<String> new_windows = getNewWindows(oldWindows);
             wd.switchTo().window(new_windows.get(0));
             String requested_teams = extractRegEx("([0-9]+)",
                     wd.findElement(By.xpath("//font[contains(text(),'Team Info')]")).getText());
             String assigned_teams = extractRegEx("([0-9]+)",
                     wd.findElement(By.xpath("//font[contains(text(),'Assigned')]")).getText());
-            asert.assertEquals(some_class.getNum_teams_requested(),requested_teams);
-            asert.assertEquals(some_class.getNum_teams_assigned(),assigned_teams);
+            asert.assertEquals(((Class) some_class).getNum_teams_requested(),requested_teams);
+            asert.assertEquals(((Class) some_class).getNum_teams_assigned(),assigned_teams);
             wd.close();
             wd.switchTo().window(viewRankings);
         }
@@ -80,11 +81,11 @@ public class AdvisorHelper extends HelperBase {
         List<String> class_names = wd.findElements(By.cssSelector("a[style*=text]")).stream()
                 .map((e)->e.getText()).collect(Collectors.toList());
         advisor.withLast_name(wd.findElement(By.cssSelector("div#dvAdvName")).getText());
-        advisor.addClasses(createClassList(class_names));
+        advisor.withClasses(createClassList(class_names));
     }
 
-    private List<Class> createClassList(List<String> class_names) {
-        List<Class> classes = new ArrayList<>();
+    private ClassSet createClassList(List<String> class_names) {
+        ClassSet classes = new ClassSet();
         for(String name : class_names){
             Class newClass = new Class().withName(name);
             String team_requested = wd.findElement(By
@@ -104,20 +105,21 @@ public class AdvisorHelper extends HelperBase {
                 }
                 newClass.addTeams((class_teams));
             }
-            classes.add(newClass);
+            classes.withClass(newClass);
         }
         return classes;
     }
 
 
     public void checkLogInAsTeam(Advisor advisor, SoftAssert asert) {
-        for(Class some_class : advisor.getClasses()){
+        for(Object some_class : advisor.getClasses()){
             String mainWindow = wd.getWindowHandle();
-            if(some_class.getTeams().size() > 0){
-                switchToNewWindow("//a[. = '%s']",some_class.getTeams().iterator().next().getLogin());
+
+            if( ((Class) some_class).getTeams().size() > 0){
+                switchToNewWindow("//a[. = '%s']",((Class) some_class).getTeams().iterator().next().getLogin());
                 wait.until(ExpectedConditions.visibilityOf(wd.findElement(By
                         .xpath("//span[@id = 'hdrlblAdvisor'][. = 'Willard Kramer']"))));
-                asert.assertEquals(some_class.getTeams().iterator().next()
+                asert.assertEquals(((Class) some_class).getTeams().iterator().next()
                         .getLogin(), wd.findElement(By.cssSelector("span#lblTeam")).getText());
                 wd.close();
                 wd.switchTo().window(mainWindow);
